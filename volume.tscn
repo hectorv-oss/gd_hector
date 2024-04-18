@@ -1,0 +1,52 @@
+[gd_scene load_steps=4 format=3 uid="uid://g2xgtymlxfpb"]
+
+[ext_resource type="AudioStream" uid="uid://biecec33ovit" path="res://audio/music/song.ogg" id="1_6w8ea"]
+[ext_resource type="Script" path="res://volume.gd" id="1_7dgad"]
+[ext_resource type="PackedScene" uid="uid://bcm0y2vh4gva5" path="res://audio.tscn" id="1_q1pt3"]
+
+[node name="voulme" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_7dgad")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+alignment = 1
+
+[node name="PanelContainer" type="PanelContainer" parent="HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="VBoxContainer" type="VBoxContainer" parent="HBoxContainer/PanelContainer"]
+layout_mode = 2
+size_flags_vertical = 4
+alignment = 2
+
+[node name="music2" type="Label" parent="HBoxContainer/PanelContainer/VBoxContainer"]
+layout_mode = 2
+text = "Music  Volume"
+
+[node name="audio" parent="HBoxContainer/PanelContainer/VBoxContainer" instance=ExtResource("1_q1pt3")]
+layout_mode = 2
+bus_name = "Master"
+
+[node name="leave" type="Button" parent="HBoxContainer/PanelContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+text = "leave
+"
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("1_6w8ea")
+autoplay = true
+
+[connection signal="pressed" from="HBoxContainer/PanelContainer/VBoxContainer/leave" to="." method="_on_leave_pressed"]

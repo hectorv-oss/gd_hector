@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://5i6uaixrgkr8"
+path="res://.godot/imported/cartoon fall (sound effect).mp3-79d8a3b3d028519a773c8d4dd35bd2a6.mp3str"
+
+[deps]
+
+source_file="res://audio/music/cartoon fall (sound effect).mp3"
+dest_files=["res://.godot/imported/cartoon fall (sound effect).mp3-79d8a3b3d028519a773c8d4dd35bd2a6.mp3str"]
+
+[params]
+
+loop=true
+loop_offset=0.0
+bpm=0.0
+beat_count=0
+bar_beats=4

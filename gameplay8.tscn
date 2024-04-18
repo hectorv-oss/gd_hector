@@ -1,0 +1,180 @@
+[gd_scene load_steps=10 format=3 uid="uid://7hl0sos36lnp"]
+
+[ext_resource type="Script" path="res://gameplay8.gd" id="1_hd0bb"]
+[ext_resource type="PackedScene" uid="uid://b02dh7pmfqy3v" path="res://user_interface.tscn" id="2_lm6jh"]
+[ext_resource type="Script" path="res://user_interface8.gd" id="3_m22fq"]
+[ext_resource type="Texture2D" uid="uid://crs3fmw256n73" path="res://chest noir.png" id="4_g63fl"]
+[ext_resource type="PackedScene" uid="uid://bko8586fccjdy" path="res://enigme 1.tscn" id="5_1hxkv"]
+[ext_resource type="PackedScene" uid="uid://bdxju6vhp6w6r" path="res://enigme 1part2.tscn" id="6_ugytu"]
+[ext_resource type="PackedScene" uid="uid://bqijqngx1ul8l" path="res://enigme_1_fin.tscn" id="7_6n511"]
+[ext_resource type="Texture2D" uid="uid://gvs0ak8c053o" path="res://chest blue.png" id="8_q4mwu"]
+[ext_resource type="Texture2D" uid="uid://ddivvvvek8h1u" path="res://chest red.png" id="9_eu0lc"]
+
+[node name="Node2D" type="Node2D"]
+position = Vector2(-1426, -1618)
+script = ExtResource("1_hd0bb")
+
+[node name="UserInterface" parent="." instance=ExtResource("2_lm6jh")]
+script = ExtResource("3_m22fq")
+
+[node name="Button6" type="Button" parent="."]
+offset_left = 1044.0
+offset_top = 1191.0
+offset_right = 1587.0
+offset_bottom = 1509.0
+
+[node name="Sprite2D" type="Sprite2D" parent="Button6"]
+texture_filter = 1
+position = Vector2(226, 55)
+scale = Vector2(12.1153, 9.83477)
+texture = ExtResource("4_g63fl")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(116, 1119)
+zoom = Vector2(0.3, 0.3)
+
+[node name="enigme 1" parent="Camera2D" instance=ExtResource("5_1hxkv")]
+offset_left = -521.0
+offset_top = -379.0
+offset_right = -521.0
+offset_bottom = -379.0
+
+[node name="enigme 2" parent="Camera2D" instance=ExtResource("5_1hxkv")]
+offset_left = -1352.0
+offset_top = 352.0
+offset_right = -1352.0
+offset_bottom = 352.0
+
+[node name="enigme 3" parent="Camera2D" instance=ExtResource("5_1hxkv")]
+offset_left = -1749.0
+offset_top = -414.0
+offset_right = -1749.0
+offset_bottom = -414.0
+
+[node name="enigme1part2" parent="Camera2D" instance=ExtResource("6_ugytu")]
+offset_left = 86.0
+offset_top = 342.0
+offset_right = 86.0
+offset_bottom = 342.0
+
+[node name="enigme1part3" parent="Camera2D" instance=ExtResource("6_ugytu")]
+offset_left = 702.0
+offset_top = -1070.0
+offset_right = 702.0
+offset_bottom = -1070.0
+
+[node name="enigme1fin" parent="Camera2D" instance=ExtResource("7_6n511")]
+offset_left = 652.0
+offset_top = -341.0
+offset_right = 652.0
+offset_bottom = -341.0
+
+[node name="enigme 4" parent="Camera2D" instance=ExtResource("5_1hxkv")]
+anchors_preset = 0
+anchor_right = 0.0
+anchor_bottom = 0.0
+offset_left = -1757.0
+offset_top = -1102.0
+offset_right = -1757.0
+offset_bottom = -1102.0
+grow_horizontal = 1
+grow_vertical = 1
+
+[node name="enigme 5" parent="Camera2D" instance=ExtResource("5_1hxkv")]
+offset_left = -532.0
+offset_top = -1080.0
+offset_right = -532.0
+offset_bottom = -1080.0
+
+[node name="Button" type="Button" parent="."]
+offset_left = 433.0
+offset_top = 1905.0
+offset_right = 1044.0
+offset_bottom = 2223.0
+
+[node name="Sprite2D" type="Sprite2D" parent="Button"]
+texture_filter = 1
+position = Vector2(264.967, 78.8281)
+scale = Vector2(13.5613, 8.73906)
+texture = ExtResource("4_g63fl")
+
+[node name="Button2" type="Button" parent="."]
+offset_left = -1337.0
+offset_top = 1175.0
+offset_right = -794.0
+offset_bottom = 1493.0
+
+[node name="Sprite2D" type="Sprite2D" parent="Button2"]
+texture_filter = 1
+position = Vector2(252.967, 106.172)
+scale = Vector2(15.4813, 8.23906)
+texture = ExtResource("8_q4mwu")
+
+[node name="Button3" type="Button" parent="."]
+offset_left = -163.0
+offset_top = 1146.0
+offset_right = 380.0
+offset_bottom = 1464.0
+
+[node name="Sprite2D" type="Sprite2D" parent="Button3"]
+texture_filter = 1
+position = Vector2(288.967, 85.1719)
+scale = Vector2(14.0413, 9.73906)
+texture = ExtResource("8_q4mwu")
+
+[node name="Button4" type="Button" parent="."]
+offset_left = -1095.0
+offset_top = 1855.0
+offset_right = -475.0
+offset_bottom = 2210.0
+
+[node name="Sprite2D" type="Sprite2D" parent="Button4"]
+texture_filter = 1
+position = Vector2(364, 129)
+scale = Vector2(16.08, 8.83333)
+texture = ExtResource("9_eu0lc")
+
+[node name="Button5" type="Button" parent="."]
+offset_left = 1146.0
+offset_top = 463.0
+offset_right = 1689.0
+offset_bottom = 781.0
+
+[node name="Sprite2D" type="Sprite2D" parent="Button5"]
+texture_filter = 1
+position = Vector2(252.967, 49.1719)
+scale = Vector2(15.0013, 9.93906)
+texture = ExtResource("8_q4mwu")
+
+[node name="Button7" type="Button" parent="."]
+offset_left = -144.0
+offset_top = 444.0
+offset_right = 365.0
+offset_bottom = 785.0
+
+[node name="Sprite2D" type="Sprite2D" parent="Button7"]
+texture_filter = 1
+position = Vector2(260, 57)
+scale = Vector2(12.1153, 9.83477)
+texture = ExtResource("4_g63fl")
+
+[node name="Button8" type="Button" parent="."]
+offset_left = -1411.0
+offset_top = 422.0
+offset_right = -868.0
+offset_bottom = 740.0
+
+[node name="Sprite2D" type="Sprite2D" parent="Button8"]
+texture_filter = 1
+position = Vector2(204, 79)
+scale = Vector2(12.1153, 9.83477)
+texture = ExtResource("4_g63fl")
+
+[connection signal="pressed" from="Button6" to="UserInterface" method="_on_button_6_pressed"]
+[connection signal="pressed" from="Button" to="UserInterface" method="_on_button_pressed"]
+[connection signal="pressed" from="Button2" to="UserInterface" method="_on_button_2_pressed"]
+[connection signal="pressed" from="Button3" to="UserInterface" method="_on_button_3_pressed"]
+[connection signal="pressed" from="Button4" to="." method="_on_button_4_pressed"]
+[connection signal="pressed" from="Button5" to="UserInterface" method="_on_button_5_pressed"]
+[connection signal="pressed" from="Button7" to="UserInterface" method="_on_button_7_pressed"]
+[connection signal="pressed" from="Button8" to="UserInterface" method="_on_button_8_pressed"]

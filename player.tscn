@@ -1,0 +1,168 @@
+[gd_scene load_steps=20 format=3 uid="uid://n6ne3fe1rimi"]
+
+[ext_resource type="Script" path="res://player.gd" id="1_uy5y1"]
+[ext_resource type="Texture2D" uid="uid://hlloa5gppupd" path="res://jump/tout ensemble anime/jump.png" id="2_g2d5b"]
+[ext_resource type="Texture2D" uid="uid://dpd6wlk5dviyd" path="res://jump/tout ensemble anime/finale.png" id="3_elua4"]
+[ext_resource type="Texture2D" uid="uid://b1h40nr4y863" path="res://commande vrai.png" id="4_v1jtv"]
+[ext_resource type="Script" path="res://player sprite2d.gd" id="5_wv8s6"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hew6j"]
+atlas = ExtResource("2_g2d5b")
+region = Rect2(70, 0, 35, 60)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rn3mi"]
+atlas = ExtResource("2_g2d5b")
+region = Rect2(0, 0, 35, 60)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_y1465"]
+atlas = ExtResource("2_g2d5b")
+region = Rect2(0, 0, 35, 60)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_maj0y"]
+atlas = ExtResource("2_g2d5b")
+region = Rect2(35, 0, 35, 60)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_apkyw"]
+atlas = ExtResource("2_g2d5b")
+region = Rect2(70, 0, 35, 60)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ycq1j"]
+atlas = ExtResource("2_g2d5b")
+region = Rect2(105, 0, 35, 60)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fo3k3"]
+atlas = ExtResource("3_elua4")
+region = Rect2(35, 0, 35, 60)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_eexkl"]
+atlas = ExtResource("3_elua4")
+region = Rect2(70, 0, 35, 60)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_dsxms"]
+atlas = ExtResource("3_elua4")
+region = Rect2(105, 0, 35, 60)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wcffl"]
+atlas = ExtResource("3_elua4")
+region = Rect2(140, 0, 35, 60)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_rwuv4"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hew6j")
+}],
+"loop": true,
+"name": &"air",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_rn3mi")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_y1465")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_maj0y")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_apkyw")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ycq1j")
+}],
+"loop": true,
+"name": &"jump",
+"speed": 4.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fo3k3")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_eexkl")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_dsxms")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wcffl")
+}],
+"loop": true,
+"name": &"walk",
+"speed": 4.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_j8x5f"]
+radius = 11.0
+height = 34.0
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_8s87j"]
+radius = 21.0
+height = 62.0
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_5gjcy"]
+size = Vector2(74, 39)
+
+[node name="Player" type="CharacterBody2D"]
+script = ExtResource("1_uy5y1")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+texture_filter = 1
+sprite_frames = SubResource("SpriteFrames_rwuv4")
+animation = &"jump"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-1, -1)
+shape = SubResource("CapsuleShape2D_j8x5f")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+zoom = Vector2(2.5, 2.5)
+process_callback = 0
+position_smoothing_enabled = true
+position_smoothing_speed = 12.0
+drag_horizontal_enabled = true
+drag_vertical_enabled = true
+
+[node name="RemoteTransform2D" type="RemoteTransform2D" parent="."]
+remote_path = NodePath("../Camera2D")
+
+[node name="direction" type="Marker2D" parent="."]
+
+[node name="actionablefinder" type="Area2D" parent="direction"]
+collision_layer = 0
+collision_mask = 16
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="direction/actionablefinder"]
+position = Vector2(0, -1)
+shape = SubResource("CapsuleShape2D_8s87j")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+visible = false
+texture_filter = 2
+position = Vector2(1.76902, 1.09174)
+scale = Vector2(0.677386, 0.869235)
+texture = ExtResource("4_v1jtv")
+script = ExtResource("5_wv8s6")
+
+[node name="magnet" type="Area2D" parent="."]
+position = Vector2(0, 1)
+
+[node name="magnetshape" type="CollisionShape2D" parent="magnet"]
+position = Vector2(32, -6.5)
+shape = SubResource("RectangleShape2D_5gjcy")
+
+[node name="dash_timer" type="Timer" parent="."]
+wait_time = 0.2
+
+[node name="dash_again_timer" type="Timer" parent="."]
+
+[connection signal="animation_finished" from="AnimatedSprite2D" to="." method="_on_animated_sprite_2d_animation_finished"]
+[connection signal="timeout" from="dash_timer" to="." method="_on_dash_timer_timeout"]
+[connection signal="timeout" from="dash_again_timer" to="." method="_on_dash_again_timer_timeout"]

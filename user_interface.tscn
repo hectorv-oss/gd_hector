@@ -1,0 +1,17 @@
+[gd_scene load_steps=2 format=3 uid="uid://b02dh7pmfqy3v"]
+
+[ext_resource type="Script" path="res://user_interface.gd" id="1_l32x7"]
+
+[node name="UserInterface" type="CanvasLayer"]
+script = ExtResource("1_l32x7")
+
+[node name="score" type="Label" parent="."]
+offset_right = 40.0
+offset_bottom = 23.0
+text = "food collected:0"
+
+[node name="mistake" type="Label" parent="."]
+offset_right = 183.0
+offset_bottom = 123.0
+text = "mistake:0"
+vertical_alignment = 1

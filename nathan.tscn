@@ -1,0 +1,20 @@
+[gd_scene load_steps=3 format=3 uid="uid://m5xf63d6uc8x"]
+
+[ext_resource type="Texture2D" uid="uid://nmhoicviapf5" path="res://panneau.png" id="1_r7yoh"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_7ul7b"]
+size = Vector2(8.80195, 14.0909)
+
+[node name="panneau" type="StaticBody2D"]
+position = Vector2(-291, -89)
+scale = Vector2(-2.72667, 2.2)
+
+[node name="panneau" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(2.56723, 3.63636)
+scale = Vector2(0.260937, 0.292614)
+texture = ExtResource("1_r7yoh")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(2.93398, 5.45455)
+shape = SubResource("RectangleShape2D_7ul7b")
