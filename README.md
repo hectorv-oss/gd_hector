@@ -1,6 +1,10 @@
 # godot
 
+projet game 2d
 
-## subtitle
+platformer 2d puzzle
+
+
+## current developping
 
 item
