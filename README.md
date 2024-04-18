@@ -7,4 +7,3 @@ platformer 2d puzzle
 
 ## current developping
 
-item
