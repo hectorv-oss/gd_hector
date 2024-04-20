@@ -13,16 +13,20 @@ func _ready():
 
 
 
-func _on_button_pressed():
-	mistakes = mistakes + 1
-	$mistake.text = "mistake :" + str(mistakes)
-
-
-func _on_button_2_pressed():
-	mistakes = mistakes + 1
-	$mistake.text = "mistake :" + str(mistakes)
-
-
 func _on_button_3_pressed():
+	mistakes = mistakes + 1
+	$mistake.text = "mistake :" + str(mistakes)
+
+
+func _on_button_4_pressed():
+	mistakes = mistakes + 1
+	$mistake.text = "mistake :" + str(mistakes)
+
+
+func _on_button_7_pressed():
+	mistakes = mistakes + 1
+	$mistake.text = "mistake :" + str(mistakes)
+
+func _on_button_8_pressed():
 	mistakes = mistakes + 1
 	$mistake.text = "mistake :" + str(mistakes)

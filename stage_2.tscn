@@ -5,7 +5,7 @@
 [ext_resource type="Texture2D" uid="uid://ctrxs7fgl4ly4" path="res://dirt-tiles.png" id="2_lwwox"]
 [ext_resource type="PackedScene" uid="uid://n6ne3fe1rimi" path="res://player.tscn" id="2_ot6qm"]
 [ext_resource type="Texture2D" uid="uid://dq5fcu6fiqy0h" path="res://DarkHouseTiles.png" id="3_fwmui"]
-[ext_resource type="Texture2D" uid="uid://ccsxrlnsp7ffe" path="res://icon.svg" id="4_mb76r"]
+[ext_resource type="Texture2D" uid="uid://byyvs374r4523" path="res://icon.svg" id="4_mb76r"]
 [ext_resource type="Texture2D" uid="uid://ptmkrxrenga8" path="res://door.png" id="5_p6k4m"]
 [ext_resource type="Texture2D" uid="uid://dta3vkpwltc3w" path="res://cave.png" id="5_yky5n"]
 [ext_resource type="PackedScene" uid="uid://m5xf63d6uc8x" path="res://nathan.tscn" id="6_h4ima"]

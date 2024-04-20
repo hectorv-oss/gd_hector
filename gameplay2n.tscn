@@ -1,0 +1,139 @@
+[gd_scene load_steps=11 format=3 uid="uid://d1vortxajtgls"]
+
+[ext_resource type="Texture2D" uid="uid://cl5vd2m5jjybk" path="res://HUD Text Box.png" id="1_2q7po"]
+[ext_resource type="FontFile" uid="uid://cbjflvhx0o87j" path="res://PixeloidSans-Bold.ttf" id="2_8c1u3"]
+[ext_resource type="Texture2D" uid="uid://gvs0ak8c053o" path="res://chest blue.png" id="3_fodm2"]
+[ext_resource type="Texture2D" uid="uid://crs3fmw256n73" path="res://chest noir.png" id="5_e5bfm"]
+[ext_resource type="Script" path="res://user_interface2.gd" id="6_ebklf"]
+[ext_resource type="PackedScene" uid="uid://b02dh7pmfqy3v" path="res://user_interface.tscn" id="6_jxuok"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_dxagb"]
+texture = ExtResource("1_2q7po")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_hrggx"]
+texture = ExtResource("1_2q7po")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_25btv"]
+texture = ExtResource("1_2q7po")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_4gq5v"]
+texture = ExtResource("1_2q7po")
+
+[node name="Gameplay1b" type="GridContainer"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+columns = 2
+
+[node name="Button" type="PanelContainer" parent="."]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_styles/panel = SubResource("StyleBoxTexture_dxagb")
+
+[node name="text1" type="Label" parent="Button"]
+texture_filter = 2
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_8c1u3")
+theme_override_font_sizes/font_size = 24
+text = "le coffre en dessous
+de moi est le vrai coffre"
+horizontal_alignment = 1
+
+[node name="Button2" type="PanelContainer" parent="."]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_styles/panel = SubResource("StyleBoxTexture_hrggx")
+
+[node name="text1" type="Label" parent="Button2"]
+texture_filter = 2
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_8c1u3")
+theme_override_font_sizes/font_size = 24
+text = "le coffre de gauche
+ n'est pas le vrai coffre"
+horizontal_alignment = 1
+
+[node name="Button3" type="Button" parent="."]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="text1" type="Sprite2D" parent="Button3"]
+texture_filter = 1
+position = Vector2(285, 64)
+scale = Vector2(6.86, 3.7)
+texture = ExtResource("3_fodm2")
+
+[node name="Button4" type="Button" parent="."]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Sprite2D" type="Sprite2D" parent="Button4"]
+texture_filter = 1
+position = Vector2(227, 42)
+scale = Vector2(6.78, 4.61667)
+texture = ExtResource("3_fodm2")
+
+[node name="Button5" type="PanelContainer" parent="."]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_styles/panel = SubResource("StyleBoxTexture_25btv")
+
+[node name="text1" type="Label" parent="Button5"]
+texture_filter = 2
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_8c1u3")
+theme_override_font_sizes/font_size = 24
+text = "le coffre de droite
+ est  le vrai coffre"
+horizontal_alignment = 1
+
+[node name="Button6" type="PanelContainer" parent="."]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_styles/panel = SubResource("StyleBoxTexture_4gq5v")
+
+[node name="text1" type="Label" parent="Button6"]
+texture_filter = 2
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_8c1u3")
+theme_override_font_sizes/font_size = 24
+text = "le coffre de gauche
+ est  le vrai coffre"
+horizontal_alignment = 1
+
+[node name="Button7" type="Button" parent="."]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Sprite2D" type="Sprite2D" parent="Button7"]
+texture_filter = 1
+position = Vector2(227, 42)
+scale = Vector2(6.78, 4.61667)
+texture = ExtResource("5_e5bfm")
+
+[node name="Button8" type="Button" parent="."]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Sprite2D" type="Sprite2D" parent="Button8"]
+texture_filter = 1
+position = Vector2(227, 42)
+scale = Vector2(6.78, 4.61667)
+texture = ExtResource("5_e5bfm")
+
+[node name="UserInterface" parent="." instance=ExtResource("6_jxuok")]
+script = ExtResource("6_ebklf")
+
+[connection signal="pressed" from="Button3" to="UserInterface" method="_on_button_3_pressed"]
+[connection signal="pressed" from="Button4" to="UserInterface" method="_on_button_4_pressed"]
+[connection signal="pressed" from="Button8" to="UserInterface" method="_on_button_8_pressed"]
