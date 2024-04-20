@@ -2,7 +2,7 @@ extends Area2D
 #kirby
 var getmagnet = false
 
-@onready var animated_sprite = $AnimatedSprite2D
+
 
 func _physics_process(delta):
 	if getmagnet ==false:

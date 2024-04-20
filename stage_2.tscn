@@ -1,7 +1,6 @@
-[gd_scene load_steps=36 format=3 uid="uid://drggrgqah80g7"]
+[gd_scene load_steps=35 format=3 uid="uid://drggrgqah80g7"]
 
 [ext_resource type="Texture2D" uid="uid://bckdrpt5waoc0" path="res://background forest.png" id="1_odcls"]
-[ext_resource type="Texture2D" uid="uid://j8g3utgeiukb" path="res://enigme 3/sky.png" id="1_xa7s2"]
 [ext_resource type="Texture2D" uid="uid://ctrxs7fgl4ly4" path="res://dirt-tiles.png" id="2_lwwox"]
 [ext_resource type="PackedScene" uid="uid://n6ne3fe1rimi" path="res://player.tscn" id="2_ot6qm"]
 [ext_resource type="Texture2D" uid="uid://dq5fcu6fiqy0h" path="res://DarkHouseTiles.png" id="3_fwmui"]
@@ -7402,7 +7401,6 @@ offset_left = -34.0
 offset_top = -495.0
 offset_right = 906.0
 offset_bottom = -187.0
-texture = ExtResource("1_xa7s2")
 expand_mode = 5
 
 [node name="TextureRect" type="TextureRect" parent="."]
