@@ -41,6 +41,8 @@ func _on_button_10_pressed():
 	$mistake.text = "mistake :" + str(mistakes)
 
 
-func _on_button_11_pressed():
+
+
+func _on_button_12_pressed():
 	mistakes = mistakes + 1
 	$mistake.text = "mistake :" + str(mistakes)
