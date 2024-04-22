@@ -1,30 +1,30 @@
-[gd_scene load_steps=14 format=3 uid="uid://bwh6hmno7yqyf"]
+[gd_scene load_steps=14 format=3 uid="uid://da2qh0ia40g8w"]
 
-[ext_resource type="Texture2D" uid="uid://cl5vd2m5jjybk" path="res://HUD Text Box.png" id="1_r06vi"]
-[ext_resource type="FontFile" uid="uid://cbjflvhx0o87j" path="res://PixeloidSans-Bold.ttf" id="2_6ownf"]
-[ext_resource type="Texture2D" uid="uid://gvs0ak8c053o" path="res://chest blue.png" id="3_vxb2y"]
-[ext_resource type="Texture2D" uid="uid://ddivvvvek8h1u" path="res://chest red.png" id="4_ih0q5"]
-[ext_resource type="Texture2D" uid="uid://crs3fmw256n73" path="res://chest noir.png" id="5_vf5hu"]
-[ext_resource type="PackedScene" uid="uid://b02dh7pmfqy3v" path="res://user_interface.tscn" id="6_2gda6"]
-[ext_resource type="Script" path="res://user_interface4.gd" id="7_k4dih"]
+[ext_resource type="Texture2D" uid="uid://cl5vd2m5jjybk" path="res://HUD Text Box.png" id="1_aahnw"]
+[ext_resource type="FontFile" uid="uid://cbjflvhx0o87j" path="res://PixeloidSans-Bold.ttf" id="2_1kd0k"]
+[ext_resource type="Texture2D" uid="uid://gvs0ak8c053o" path="res://chest blue.png" id="3_tgxa0"]
+[ext_resource type="Texture2D" uid="uid://ddivvvvek8h1u" path="res://chest red.png" id="4_278w4"]
+[ext_resource type="Texture2D" uid="uid://crs3fmw256n73" path="res://chest noir.png" id="5_s0dh0"]
+[ext_resource type="PackedScene" uid="uid://b02dh7pmfqy3v" path="res://user_interface.tscn" id="6_gst13"]
+[ext_resource type="Script" path="res://user_interface4.gd" id="7_n41wk"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_dxagb"]
-texture = ExtResource("1_r06vi")
+texture = ExtResource("1_aahnw")
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_hrggx"]
-texture = ExtResource("1_r06vi")
+texture = ExtResource("1_aahnw")
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_4d3xn"]
-texture = ExtResource("1_r06vi")
+texture = ExtResource("1_aahnw")
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_fs3hh"]
-texture = ExtResource("1_r06vi")
+texture = ExtResource("1_aahnw")
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_3vtyx"]
-texture = ExtResource("1_r06vi")
+texture = ExtResource("1_aahnw")
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_0551e"]
-texture = ExtResource("1_r06vi")
+texture = ExtResource("1_aahnw")
 
 [node name="Gameplay1b" type="GridContainer"]
 anchors_preset = 15
@@ -43,10 +43,11 @@ theme_override_styles/panel = SubResource("StyleBoxTexture_dxagb")
 [node name="text1" type="Label" parent="Button"]
 texture_filter = 2
 layout_mode = 2
-theme_override_fonts/font = ExtResource("2_6ownf")
+theme_override_fonts/font = ExtResource("2_1kd0k")
 theme_override_font_sizes/font_size = 20
 text = "il n'y  a pas de vrai coffre 
-parmi les coffres bleus"
+parmi les coffres rouges
+"
 horizontal_alignment = 1
 
 [node name="Button2" type="PanelContainer" parent="."]
@@ -58,10 +59,10 @@ theme_override_styles/panel = SubResource("StyleBoxTexture_hrggx")
 [node name="text1" type="Label" parent="Button2"]
 texture_filter = 2
 layout_mode = 2
-theme_override_fonts/font = ExtResource("2_6ownf")
+theme_override_fonts/font = ExtResource("2_1kd0k")
 theme_override_font_sizes/font_size = 20
-text = "il n'y  a pas de vrai coffre 
-parmi les coffres bleus"
+text = "il  y a  le vrai coffre 
+parmi les coffres noirs"
 horizontal_alignment = 1
 
 [node name="Button3" type="PanelContainer" parent="."]
@@ -73,7 +74,7 @@ theme_override_styles/panel = SubResource("StyleBoxTexture_4d3xn")
 [node name="text1" type="Label" parent="Button3"]
 texture_filter = 2
 layout_mode = 2
-theme_override_fonts/font = ExtResource("2_6ownf")
+theme_override_fonts/font = ExtResource("2_1kd0k")
 theme_override_font_sizes/font_size = 18
 text = "il n'y  a pas de vrai coffre 
 parmi les coffres bleus"
@@ -88,7 +89,7 @@ size_flags_vertical = 3
 texture_filter = 1
 position = Vector2(227, 42)
 scale = Vector2(6.78, 4.61667)
-texture = ExtResource("3_vxb2y")
+texture = ExtResource("3_tgxa0")
 
 [node name="Button5" type="Button" parent="."]
 layout_mode = 2
@@ -99,7 +100,7 @@ size_flags_vertical = 3
 texture_filter = 1
 position = Vector2(227, 42)
 scale = Vector2(6.78, 4.61667)
-texture = ExtResource("3_vxb2y")
+texture = ExtResource("3_tgxa0")
 
 [node name="Button6" type="Button" parent="."]
 layout_mode = 2
@@ -110,7 +111,7 @@ size_flags_vertical = 3
 texture_filter = 1
 position = Vector2(227, 42)
 scale = Vector2(6.78, 4.61667)
-texture = ExtResource("3_vxb2y")
+texture = ExtResource("3_tgxa0")
 
 [node name="Button7" type="PanelContainer" parent="."]
 layout_mode = 2
@@ -121,10 +122,10 @@ theme_override_styles/panel = SubResource("StyleBoxTexture_fs3hh")
 [node name="text1" type="Label" parent="Button7"]
 texture_filter = 2
 layout_mode = 2
-theme_override_fonts/font = ExtResource("2_6ownf")
+theme_override_fonts/font = ExtResource("2_1kd0k")
 theme_override_font_sizes/font_size = 20
-text = "il n'y  a pas de vrai coffre 
-parmi les coffres bleus"
+text = "il  y a  le vrai coffre 
+parmi les coffres noirs"
 horizontal_alignment = 1
 
 [node name="Button8" type="PanelContainer" parent="."]
@@ -136,10 +137,10 @@ theme_override_styles/panel = SubResource("StyleBoxTexture_3vtyx")
 [node name="text1" type="Label" parent="Button8"]
 texture_filter = 2
 layout_mode = 2
-theme_override_fonts/font = ExtResource("2_6ownf")
+theme_override_fonts/font = ExtResource("2_1kd0k")
 theme_override_font_sizes/font_size = 18
-text = "il  y a  le  vrai coffre 
-parmi les coffres bleus"
+text = "il n'y  a pas de vrai coffre 
+parmi les coffres noirs"
 horizontal_alignment = 1
 
 [node name="Button9" type="PanelContainer" parent="."]
@@ -151,10 +152,10 @@ theme_override_styles/panel = SubResource("StyleBoxTexture_0551e")
 [node name="text1" type="Label" parent="Button9"]
 texture_filter = 2
 layout_mode = 2
-theme_override_fonts/font = ExtResource("2_6ownf")
+theme_override_fonts/font = ExtResource("2_1kd0k")
 theme_override_font_sizes/font_size = 20
-text = "il n'y  a pas de vrai coffre 
-parmi les coffres bleus"
+text = "il  y a  le vrai coffre 
+parmi les coffres noirs"
 horizontal_alignment = 1
 
 [node name="Button10" type="Button" parent="."]
@@ -167,7 +168,7 @@ theme_override_font_sizes/font_size = 24
 texture_filter = 1
 position = Vector2(227, 42)
 scale = Vector2(6.78, 4.61667)
-texture = ExtResource("4_ih0q5")
+texture = ExtResource("4_278w4")
 
 [node name="Button11" type="Button" parent="."]
 layout_mode = 2
@@ -179,7 +180,7 @@ theme_override_font_sizes/font_size = 24
 texture_filter = 1
 position = Vector2(227, 42)
 scale = Vector2(6.78, 4.61667)
-texture = ExtResource("5_vf5hu")
+texture = ExtResource("5_s0dh0")
 
 [node name="Button12" type="Button" parent="."]
 layout_mode = 2
@@ -191,10 +192,10 @@ theme_override_font_sizes/font_size = 24
 texture_filter = 1
 position = Vector2(227, 42)
 scale = Vector2(6.78, 4.61667)
-texture = ExtResource("5_vf5hu")
+texture = ExtResource("5_s0dh0")
 
-[node name="UserInterface" parent="." instance=ExtResource("6_2gda6")]
-script = ExtResource("7_k4dih")
+[node name="UserInterface" parent="." instance=ExtResource("6_gst13")]
+script = ExtResource("7_n41wk")
 
 [connection signal="pressed" from="Button4" to="UserInterface" method="_on_button_4_pressed"]
 [connection signal="pressed" from="Button5" to="UserInterface" method="_on_button_5_pressed"]
