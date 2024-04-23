@@ -1,0 +1,204 @@
+[gd_scene load_steps=14 format=3 uid="uid://21s6ri7llts6"]
+
+[ext_resource type="Texture2D" uid="uid://cl5vd2m5jjybk" path="res://HUD Text Box.png" id="1_u8lut"]
+[ext_resource type="FontFile" uid="uid://cbjflvhx0o87j" path="res://PixeloidSans-Bold.ttf" id="2_xky0d"]
+[ext_resource type="Texture2D" uid="uid://gvs0ak8c053o" path="res://chest blue.png" id="3_01eem"]
+[ext_resource type="Texture2D" uid="uid://ddivvvvek8h1u" path="res://chest red.png" id="4_hyg2a"]
+[ext_resource type="Texture2D" uid="uid://crs3fmw256n73" path="res://chest noir.png" id="5_yxcgt"]
+[ext_resource type="PackedScene" uid="uid://b02dh7pmfqy3v" path="res://user_interface.tscn" id="6_0vejn"]
+[ext_resource type="Script" path="res://user_interface4.gd" id="7_e23et"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_dxagb"]
+texture = ExtResource("1_u8lut")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_hrggx"]
+texture = ExtResource("1_u8lut")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_4d3xn"]
+texture = ExtResource("1_u8lut")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_fs3hh"]
+texture = ExtResource("1_u8lut")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_3vtyx"]
+texture = ExtResource("1_u8lut")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_0551e"]
+texture = ExtResource("1_u8lut")
+
+[node name="Gameplay1b" type="GridContainer"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+columns = 3
+
+[node name="Button" type="PanelContainer" parent="."]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_styles/panel = SubResource("StyleBoxTexture_dxagb")
+
+[node name="text1" type="Label" parent="Button"]
+texture_filter = 2
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_xky0d")
+theme_override_font_sizes/font_size = 20
+text = "La colonne la plus à gauche
+ n'a pas de vrai coffre
+"
+horizontal_alignment = 1
+
+[node name="Button2" type="PanelContainer" parent="."]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_styles/panel = SubResource("StyleBoxTexture_hrggx")
+
+[node name="text1" type="Label" parent="Button2"]
+texture_filter = 2
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_xky0d")
+theme_override_font_sizes/font_size = 20
+text = "Le coffre de gauche
+ n'est pas le vrai coffre"
+horizontal_alignment = 1
+
+[node name="Button3" type="PanelContainer" parent="."]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_styles/panel = SubResource("StyleBoxTexture_4d3xn")
+
+[node name="text1" type="Label" parent="Button3"]
+texture_filter = 2
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_xky0d")
+theme_override_font_sizes/font_size = 18
+text = "Le coffre en dessous de moi 
+n'est pas le vrai coffre"
+horizontal_alignment = 1
+
+[node name="Button4" type="Button" parent="."]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Sprite2D" type="Sprite2D" parent="Button4"]
+texture_filter = 1
+position = Vector2(227, 42)
+scale = Vector2(6.78, 4.61667)
+texture = ExtResource("3_01eem")
+
+[node name="Button5" type="Button" parent="."]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Sprite2D" type="Sprite2D" parent="Button5"]
+texture_filter = 1
+position = Vector2(227, 42)
+scale = Vector2(6.78, 4.61667)
+texture = ExtResource("3_01eem")
+
+[node name="Button6" type="Button" parent="."]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Sprite2D" type="Sprite2D" parent="Button6"]
+texture_filter = 1
+position = Vector2(227, 42)
+scale = Vector2(6.78, 4.61667)
+texture = ExtResource("3_01eem")
+
+[node name="Button7" type="PanelContainer" parent="."]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_styles/panel = SubResource("StyleBoxTexture_fs3hh")
+
+[node name="text1" type="Label" parent="Button7"]
+texture_filter = 2
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_xky0d")
+theme_override_font_sizes/font_size = 20
+text = "Le coffre au-dessus de moi 
+n'est pas le vrai coffre"
+horizontal_alignment = 1
+
+[node name="Button8" type="PanelContainer" parent="."]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_styles/panel = SubResource("StyleBoxTexture_3vtyx")
+
+[node name="text1" type="Label" parent="Button8"]
+texture_filter = 2
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_xky0d")
+theme_override_font_sizes/font_size = 18
+text = "La rangée du bas ne contient 
+pas de véritable coffre"
+horizontal_alignment = 1
+
+[node name="Button9" type="PanelContainer" parent="."]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_styles/panel = SubResource("StyleBoxTexture_0551e")
+
+[node name="text1" type="Label" parent="Button9"]
+texture_filter = 2
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_xky0d")
+theme_override_font_sizes/font_size = 20
+text = "Le coffre au-dessus de moi 
+n'est pas le vrai coffre"
+horizontal_alignment = 1
+
+[node name="Button10" type="Button" parent="."]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_font_sizes/font_size = 24
+
+[node name="Sprite2D" type="Sprite2D" parent="Button10"]
+texture_filter = 1
+position = Vector2(227, 42)
+scale = Vector2(6.78, 4.61667)
+texture = ExtResource("4_hyg2a")
+
+[node name="Button11" type="Button" parent="."]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_font_sizes/font_size = 24
+
+[node name="Sprite2D" type="Sprite2D" parent="Button11"]
+texture_filter = 1
+position = Vector2(227, 42)
+scale = Vector2(6.78, 4.61667)
+texture = ExtResource("5_yxcgt")
+
+[node name="Button12" type="Button" parent="."]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_font_sizes/font_size = 24
+
+[node name="Sprite2D" type="Sprite2D" parent="Button12"]
+texture_filter = 1
+position = Vector2(227, 42)
+scale = Vector2(6.78, 4.61667)
+texture = ExtResource("5_yxcgt")
+
+[node name="UserInterface" parent="." instance=ExtResource("6_0vejn")]
+script = ExtResource("7_e23et")
+
+[connection signal="pressed" from="Button4" to="UserInterface" method="_on_button_4_pressed"]
+[connection signal="pressed" from="Button5" to="UserInterface" method="_on_button_5_pressed"]
+[connection signal="pressed" from="Button6" to="UserInterface" method="_on_button_6_pressed"]
+[connection signal="pressed" from="Button10" to="UserInterface" method="_on_button_10_pressed"]
+[connection signal="pressed" from="Button12" to="UserInterface" method="_on_button_12_pressed"]
