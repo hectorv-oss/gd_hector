@@ -89,7 +89,7 @@ size_flags_vertical = 3
 texture_filter = 1
 position = Vector2(227, 42)
 scale = Vector2(6.78, 4.61667)
-texture = ExtResource("3_tgxa0")
+texture = ExtResource("4_278w4")
 
 [node name="Button5" type="Button" parent="."]
 layout_mode = 2
@@ -100,7 +100,7 @@ size_flags_vertical = 3
 texture_filter = 1
 position = Vector2(227, 42)
 scale = Vector2(6.78, 4.61667)
-texture = ExtResource("3_tgxa0")
+texture = ExtResource("5_s0dh0")
 
 [node name="Button6" type="Button" parent="."]
 layout_mode = 2
@@ -111,7 +111,7 @@ size_flags_vertical = 3
 texture_filter = 1
 position = Vector2(227, 42)
 scale = Vector2(6.78, 4.61667)
-texture = ExtResource("3_tgxa0")
+texture = ExtResource("5_s0dh0")
 
 [node name="Button7" type="PanelContainer" parent="."]
 layout_mode = 2
@@ -168,7 +168,7 @@ theme_override_font_sizes/font_size = 24
 texture_filter = 1
 position = Vector2(227, 42)
 scale = Vector2(6.78, 4.61667)
-texture = ExtResource("4_278w4")
+texture = ExtResource("3_tgxa0")
 
 [node name="Button11" type="Button" parent="."]
 layout_mode = 2
@@ -192,7 +192,7 @@ theme_override_font_sizes/font_size = 24
 texture_filter = 1
 position = Vector2(227, 42)
 scale = Vector2(6.78, 4.61667)
-texture = ExtResource("5_s0dh0")
+texture = ExtResource("4_278w4")
 
 [node name="UserInterface" parent="." instance=ExtResource("6_gst13")]
 script = ExtResource("7_n41wk")

@@ -1,12 +1,11 @@
-[gd_scene load_steps=14 format=3 uid="uid://21s6ri7llts6"]
+[gd_scene load_steps=13 format=3 uid="uid://21s6ri7llts6"]
 
 [ext_resource type="Texture2D" uid="uid://cl5vd2m5jjybk" path="res://HUD Text Box.png" id="1_u8lut"]
 [ext_resource type="FontFile" uid="uid://cbjflvhx0o87j" path="res://PixeloidSans-Bold.ttf" id="2_xky0d"]
 [ext_resource type="Texture2D" uid="uid://gvs0ak8c053o" path="res://chest blue.png" id="3_01eem"]
 [ext_resource type="Texture2D" uid="uid://ddivvvvek8h1u" path="res://chest red.png" id="4_hyg2a"]
-[ext_resource type="Texture2D" uid="uid://crs3fmw256n73" path="res://chest noir.png" id="5_yxcgt"]
 [ext_resource type="PackedScene" uid="uid://b02dh7pmfqy3v" path="res://user_interface.tscn" id="6_0vejn"]
-[ext_resource type="Script" path="res://user_interface4.gd" id="7_e23et"]
+[ext_resource type="Script" path="res://user_interface7.gd" id="6_y5x0e"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_dxagb"]
 texture = ExtResource("1_u8lut")
@@ -180,7 +179,7 @@ theme_override_font_sizes/font_size = 24
 texture_filter = 1
 position = Vector2(227, 42)
 scale = Vector2(6.78, 4.61667)
-texture = ExtResource("5_yxcgt")
+texture = ExtResource("3_01eem")
 
 [node name="Button12" type="Button" parent="."]
 layout_mode = 2
@@ -192,10 +191,10 @@ theme_override_font_sizes/font_size = 24
 texture_filter = 1
 position = Vector2(227, 42)
 scale = Vector2(6.78, 4.61667)
-texture = ExtResource("5_yxcgt")
+texture = ExtResource("3_01eem")
 
 [node name="UserInterface" parent="." instance=ExtResource("6_0vejn")]
-script = ExtResource("7_e23et")
+script = ExtResource("6_y5x0e")
 
 [connection signal="pressed" from="Button4" to="UserInterface" method="_on_button_4_pressed"]
 [connection signal="pressed" from="Button5" to="UserInterface" method="_on_button_5_pressed"]
