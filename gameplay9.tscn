@@ -1,180 +1,284 @@
-[gd_scene load_steps=10 format=3 uid="uid://g4x00iox4gxp"]
+[gd_scene load_steps=14 format=3 uid="uid://bdanw3niwydsg"]
 
-[ext_resource type="Script" path="res://gameplay9.gd" id="1_6htp0"]
+[ext_resource type="Texture2D" uid="uid://cl5vd2m5jjybk" path="res://HUD Text Box.png" id="1_xyr3h"]
+[ext_resource type="FontFile" uid="uid://cbjflvhx0o87j" path="res://PixeloidSans-Bold.ttf" id="2_tcwuf"]
 [ext_resource type="PackedScene" uid="uid://b02dh7pmfqy3v" path="res://user_interface.tscn" id="2_tsyh2"]
 [ext_resource type="Script" path="res://user_interface9.gd" id="3_u0tc8"]
 [ext_resource type="Texture2D" uid="uid://crs3fmw256n73" path="res://chest noir.png" id="4_oal7o"]
-[ext_resource type="PackedScene" uid="uid://bko8586fccjdy" path="res://enigme 1.tscn" id="5_f1ay3"]
-[ext_resource type="PackedScene" uid="uid://bdxju6vhp6w6r" path="res://enigme 1part2.tscn" id="6_utwp4"]
-[ext_resource type="PackedScene" uid="uid://bqijqngx1ul8l" path="res://enigme_1_fin.tscn" id="7_j40at"]
 [ext_resource type="Texture2D" uid="uid://gvs0ak8c053o" path="res://chest blue.png" id="8_qgvjl"]
 [ext_resource type="Texture2D" uid="uid://ddivvvvek8h1u" path="res://chest red.png" id="9_gloqp"]
 
-[node name="Node2D" type="Node2D"]
-position = Vector2(-1426, -1618)
-script = ExtResource("1_6htp0")
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_dxagb"]
+texture = ExtResource("1_xyr3h")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_hrggx"]
+texture = ExtResource("1_xyr3h")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_4d3xn"]
+texture = ExtResource("1_xyr3h")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_fs3hh"]
+texture = ExtResource("1_xyr3h")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_3vtyx"]
+texture = ExtResource("1_xyr3h")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_0551e"]
+texture = ExtResource("1_xyr3h")
+
+[node name="Gameplay1b" type="GridContainer"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+columns = 3
+
+[node name="Button" type="PanelContainer" parent="."]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_styles/panel = SubResource("StyleBoxTexture_dxagb")
+
+[node name="text1" type="Label" parent="Button"]
+texture_filter = 2
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_tcwuf")
+theme_override_font_sizes/font_size = 20
+text = "il n'y  a pas de vrai coffre 
+   parmi les coffres bleus
+"
+horizontal_alignment = 2
+
+[node name="Button2" type="PanelContainer" parent="."]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_styles/panel = SubResource("StyleBoxTexture_hrggx")
+
+[node name="text1" type="Label" parent="Button2"]
+texture_filter = 2
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_tcwuf")
+theme_override_font_sizes/font_size = 20
+text = "La rangée du supérieure  
+comporte au 
+moins un coffre véritable "
+horizontal_alignment = 1
+
+[node name="Button3" type="PanelContainer" parent="."]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_styles/panel = SubResource("StyleBoxTexture_4d3xn")
+
+[node name="text1" type="Label" parent="Button3"]
+texture_filter = 2
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_tcwuf")
+theme_override_font_sizes/font_size = 18
+horizontal_alignment = 1
+
+[node name="Button4" type="Button" parent="."]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Sprite2D" type="Sprite2D" parent="Button4"]
+texture_filter = 1
+position = Vector2(226, 1)
+scale = Vector2(6.78, 4.61667)
+texture = ExtResource("8_qgvjl")
+
+[node name="Button5" type="Button" parent="."]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Sprite2D" type="Sprite2D" parent="Button5"]
+texture_filter = 1
+position = Vector2(222, -1)
+scale = Vector2(6.78, 4.61667)
+texture = ExtResource("9_gloqp")
+
+[node name="Button6" type="Button" parent="."]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+flat = true
+
+[node name="Sprite2D" type="Sprite2D" parent="Button6"]
+texture_filter = 1
+position = Vector2(227, 42)
+scale = Vector2(6.78, 4.61667)
+
+[node name="Button7" type="PanelContainer" parent="."]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_styles/panel = SubResource("StyleBoxTexture_fs3hh")
+
+[node name="text1" type="Label" parent="Button7"]
+texture_filter = 2
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_tcwuf")
+theme_override_font_sizes/font_size = 20
+text = "La rangée du bas ne contient 
+pas le véritable coffre"
+horizontal_alignment = 1
+
+[node name="Button8" type="PanelContainer" parent="."]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_styles/panel = SubResource("StyleBoxTexture_3vtyx")
+
+[node name="text1" type="Label" parent="Button8"]
+texture_filter = 2
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_tcwuf")
+theme_override_font_sizes/font_size = 18
+text = "il n'y  a pas de vrai coffre 
+parmi les coffres noirs
+"
+horizontal_alignment = 1
+
+[node name="Button9" type="PanelContainer" parent="."]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_styles/panel = SubResource("StyleBoxTexture_0551e")
+
+[node name="text1" type="Label" parent="Button9"]
+texture_filter = 2
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_tcwuf")
+theme_override_font_sizes/font_size = 20
+text = "La rangée du bas ne contient 
+pas le véritable coffre"
+horizontal_alignment = 1
+
+[node name="Button10" type="Button" parent="."]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_font_sizes/font_size = 24
+
+[node name="Sprite2D" type="Sprite2D" parent="Button10"]
+texture_filter = 1
+position = Vector2(212, -7)
+scale = Vector2(6.78, 4.61667)
+texture = ExtResource("8_qgvjl")
+
+[node name="Button11" type="Button" parent="."]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_font_sizes/font_size = 24
+
+[node name="Sprite2D" type="Sprite2D" parent="Button11"]
+texture_filter = 1
+position = Vector2(208, -2)
+scale = Vector2(6.78, 4.61667)
+texture = ExtResource("4_oal7o")
+
+[node name="Button12" type="Button" parent="."]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_font_sizes/font_size = 24
+
+[node name="Sprite2D" type="Sprite2D" parent="Button12"]
+texture_filter = 1
+position = Vector2(208, 0)
+scale = Vector2(6.78, 4.61667)
+texture = ExtResource("8_qgvjl")
 
 [node name="UserInterface" parent="." instance=ExtResource("2_tsyh2")]
 script = ExtResource("3_u0tc8")
 
-[node name="Button6" type="Button" parent="."]
-offset_left = 1044.0
-offset_top = 1191.0
-offset_right = 1587.0
-offset_bottom = 1509.0
+[node name="Button13" type="PanelContainer" parent="."]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_styles/panel = SubResource("StyleBoxTexture_fs3hh")
 
-[node name="Sprite2D" type="Sprite2D" parent="Button6"]
+[node name="text1" type="Label" parent="Button13"]
+texture_filter = 2
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_tcwuf")
+theme_override_font_sizes/font_size = 20
+text = "il n'y  a pas de vrai coffre 
+parmi les coffres noirs
+"
+horizontal_alignment = 1
+
+[node name="Button14" type="PanelContainer" parent="."]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_styles/panel = SubResource("StyleBoxTexture_fs3hh")
+
+[node name="text1" type="Label" parent="Button14"]
+texture_filter = 2
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_tcwuf")
+theme_override_font_sizes/font_size = 20
+text = "La rangée du bas ne contient 
+pas le véritable coffre"
+horizontal_alignment = 1
+
+[node name="Button16" type="PanelContainer" parent="."]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_styles/panel = SubResource("StyleBoxTexture_fs3hh")
+
+[node name="text1" type="Label" parent="Button16"]
+texture_filter = 2
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_tcwuf")
+theme_override_font_sizes/font_size = 20
+horizontal_alignment = 1
+
+[node name="Button17" type="Button" parent="."]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="text1" type="Sprite2D" parent="Button17"]
 texture_filter = 1
-position = Vector2(226, 55)
-scale = Vector2(12.1153, 9.83477)
-texture = ExtResource("4_oal7o")
-
-[node name="Camera2D" type="Camera2D" parent="."]
-position = Vector2(116, 1119)
-zoom = Vector2(0.3, 0.3)
-
-[node name="enigme 1" parent="Camera2D" instance=ExtResource("5_f1ay3")]
-offset_left = -521.0
-offset_top = -379.0
-offset_right = -521.0
-offset_bottom = -379.0
-
-[node name="enigme 2" parent="Camera2D" instance=ExtResource("5_f1ay3")]
-offset_left = -1352.0
-offset_top = 352.0
-offset_right = -1352.0
-offset_bottom = 352.0
-
-[node name="enigme 3" parent="Camera2D" instance=ExtResource("5_f1ay3")]
-offset_left = -1749.0
-offset_top = -414.0
-offset_right = -1749.0
-offset_bottom = -414.0
-
-[node name="enigme1part2" parent="Camera2D" instance=ExtResource("6_utwp4")]
-offset_left = 86.0
-offset_top = 342.0
-offset_right = 86.0
-offset_bottom = 342.0
-
-[node name="enigme1part3" parent="Camera2D" instance=ExtResource("6_utwp4")]
-offset_left = 702.0
-offset_top = -1070.0
-offset_right = 702.0
-offset_bottom = -1070.0
-
-[node name="enigme1fin" parent="Camera2D" instance=ExtResource("7_j40at")]
-offset_left = 652.0
-offset_top = -341.0
-offset_right = 652.0
-offset_bottom = -341.0
-
-[node name="enigme 4" parent="Camera2D" instance=ExtResource("5_f1ay3")]
-anchors_preset = 0
-anchor_right = 0.0
-anchor_bottom = 0.0
-offset_left = -1757.0
-offset_top = -1102.0
-offset_right = -1757.0
-offset_bottom = -1102.0
-grow_horizontal = 1
-grow_vertical = 1
-
-[node name="enigme 5" parent="Camera2D" instance=ExtResource("5_f1ay3")]
-offset_left = -532.0
-offset_top = -1080.0
-offset_right = -532.0
-offset_bottom = -1080.0
-
-[node name="Button" type="Button" parent="."]
-offset_left = 433.0
-offset_top = 1905.0
-offset_right = 1044.0
-offset_bottom = 2223.0
-
-[node name="Sprite2D" type="Sprite2D" parent="Button"]
-texture_filter = 1
-position = Vector2(264.967, 78.8281)
-scale = Vector2(13.5613, 8.73906)
-texture = ExtResource("4_oal7o")
-
-[node name="Button2" type="Button" parent="."]
-offset_left = -1337.0
-offset_top = 1175.0
-offset_right = -794.0
-offset_bottom = 1493.0
-
-[node name="Sprite2D" type="Sprite2D" parent="Button2"]
-texture_filter = 1
-position = Vector2(252.967, 106.172)
-scale = Vector2(15.4813, 8.23906)
+position = Vector2(232.5, 3.5)
+scale = Vector2(6.42, 4.15)
 texture = ExtResource("8_qgvjl")
 
-[node name="Button3" type="Button" parent="."]
-offset_left = -163.0
-offset_top = 1146.0
-offset_right = 380.0
-offset_bottom = 1464.0
+[node name="Button15" type="Button" parent="."]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_font_sizes/font_size = 24
 
-[node name="Sprite2D" type="Sprite2D" parent="Button3"]
+[node name="Sprite2D" type="Sprite2D" parent="Button15"]
 texture_filter = 1
-position = Vector2(288.967, 85.1719)
-scale = Vector2(14.0413, 9.73906)
-texture = ExtResource("8_qgvjl")
-
-[node name="Button4" type="Button" parent="."]
-offset_left = -1095.0
-offset_top = 1855.0
-offset_right = -475.0
-offset_bottom = 2210.0
-
-[node name="Sprite2D" type="Sprite2D" parent="Button4"]
-texture_filter = 1
-position = Vector2(364, 129)
-scale = Vector2(16.08, 8.83333)
+position = Vector2(202, 0.999987)
+scale = Vector2(6.49, 4.09167)
 texture = ExtResource("9_gloqp")
 
-[node name="Button5" type="Button" parent="."]
-offset_left = 1146.0
-offset_top = 463.0
-offset_right = 1689.0
-offset_bottom = 781.0
+[node name="Button18" type="Button" parent="."]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_font_sizes/font_size = 24
+flat = true
 
-[node name="Sprite2D" type="Sprite2D" parent="Button5"]
+[node name="Sprite2D" type="Sprite2D" parent="Button18"]
 texture_filter = 1
-position = Vector2(252.967, 49.1719)
-scale = Vector2(15.0013, 9.93906)
-texture = ExtResource("8_qgvjl")
+position = Vector2(227, 42)
+scale = Vector2(6.78, 4.61667)
 
-[node name="Button7" type="Button" parent="."]
-offset_left = -144.0
-offset_top = 444.0
-offset_right = 365.0
-offset_bottom = 785.0
-
-[node name="Sprite2D" type="Sprite2D" parent="Button7"]
-texture_filter = 1
-position = Vector2(260, 57)
-scale = Vector2(12.1153, 9.83477)
-texture = ExtResource("4_oal7o")
-
-[node name="Button8" type="Button" parent="."]
-offset_left = -1411.0
-offset_top = 422.0
-offset_right = -868.0
-offset_bottom = 740.0
-
-[node name="Sprite2D" type="Sprite2D" parent="Button8"]
-texture_filter = 1
-position = Vector2(204, 79)
-scale = Vector2(12.1153, 9.83477)
-texture = ExtResource("4_oal7o")
-
-[connection signal="pressed" from="Button6" to="UserInterface" method="_on_button_6_pressed"]
-[connection signal="pressed" from="Button" to="UserInterface" method="_on_button_pressed"]
-[connection signal="pressed" from="Button2" to="UserInterface" method="_on_button_2_pressed"]
-[connection signal="pressed" from="Button3" to="UserInterface" method="_on_button_3_pressed"]
-[connection signal="pressed" from="Button4" to="UserInterface" method="_on_button_4_pressed"]
 [connection signal="pressed" from="Button5" to="UserInterface" method="_on_button_5_pressed"]
-[connection signal="pressed" from="Button7" to="UserInterface" method="_on_button_7_pressed"]
-[connection signal="pressed" from="Button8" to="." method="_on_button_8_pressed"]
+[connection signal="pressed" from="Button10" to="UserInterface" method="_on_button_10_pressed"]
+[connection signal="pressed" from="Button11" to="UserInterface" method="_on_button_11_pressed"]
+[connection signal="pressed" from="Button12" to="UserInterface" method="_on_button_12_pressed"]
+[connection signal="pressed" from="Button17" to="UserInterface" method="_on_button_17_pressed"]
+[connection signal="pressed" from="Button15" to="UserInterface" method="_on_button_15_pressed"]

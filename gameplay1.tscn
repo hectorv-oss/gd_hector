@@ -44,7 +44,9 @@ texture_filter = 2
 layout_mode = 2
 theme_override_fonts/font = ExtResource("3_j1a77")
 theme_override_font_sizes/font_size = 20
-text = "la rangée inférieure
+text = "
+
+la rangée inférieure
  contient  le véritable coffre"
 horizontal_alignment = 1
 

@@ -1,8 +1,7 @@
-[gd_scene load_steps=31 format=3 uid="uid://oqg00kmsbyfx"]
+[gd_scene load_steps=29 format=3 uid="uid://oqg00kmsbyfx"]
 
 [ext_resource type="Texture2D" uid="uid://clisdgj4h1us1" path="res://desert.png" id="1_lqo45"]
-[ext_resource type="Texture2D" uid="uid://cl5vd2m5jjybk" path="res://HUD Text Box.png" id="2_mrwfh"]
-[ext_resource type="Texture2D" uid="uid://d3m54d7rn11nu" path="res://rocky-far-mountains.png" id="2_vx886"]
+[ext_resource type="Texture2D" uid="uid://dcdvb2etsqbal" path="res://d.png" id="2_xbhug"]
 [ext_resource type="Texture2D" uid="uid://ptmkrxrenga8" path="res://door.png" id="4_45x1y"]
 [ext_resource type="PackedScene" uid="uid://n6ne3fe1rimi" path="res://player.tscn" id="5_3wspl"]
 [ext_resource type="PackedScene" uid="uid://m5xf63d6uc8x" path="res://nathan.tscn" id="6_b3olw"]
@@ -5583,9 +5582,6 @@ physics_layer_0/collision_layer = 1
 navigation_layer_0/layers = 1
 sources/1 = SubResource("TileSetAtlasSource_hd8re")
 
-[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_gdffe"]
-texture = ExtResource("2_mrwfh")
-
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_h6ibi"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_21nhn"]
@@ -5601,30 +5597,18 @@ size = Vector2(49.25, 43.5)
 [node name="main" type="Node" groups=["Persist"]]
 
 [node name="désert" type="TileMap" parent="."]
+texture_filter = 1
 tile_set = SubResource("TileSet_gls87")
 format = 2
 layer_0/tile_data = PackedInt32Array(12, 327680, 6, 13, 327680, 6, 14, 327680, 6, 15, 327680, 6, 16, 327680, 6, 65552, 327680, 6, 65553, 327680, 6, 65554, 327680, 6, 65555, 327680, 6, 65556, 327680, 6, 20, 327680, 6, 19, 327680, 6, 18, 327680, 6, 65551, 327680, 6, 65550, 327680, 6, 65549, 327680, 6, 17, 327680, 6, 65557, 327680, 6, 65558, 327680, 6, 65559, 327680, 6, 22, 327680, 6, 21, 327680, 6, 79, 327680, 6, 78, 327680, 6, 77, 327680, 6, 76, 327680, 6, 75, 327680, 6, 74, 327680, 6, 73, 327680, 6, 72, 327680, 6, 71, 327680, 6, 70, 327680, 6, 69, 327680, 6, 68, 327680, 6, 67, 327680, 6, 65602, 327680, 6, 65601, 327680, 6, 65600, 327680, 6, 65599, 327680, 6, 65598, 327680, 6, 65597, 327680, 6, 65596, 327680, 6, 66, 327680, 6, 65, 327680, 6, 64, 327680, 6, 63, 327680, 6, 62, 327680, 6, 61, 327680, 6, 60, 327680, 6, 59, 327680, 6, 58, 327680, 6, 57, 327680, 6, 56, 327680, 6, 55, 327680, 6, 65590, 327680, 6, 65589, 327680, 6, 65588, 327680, 6, 65587, 327680, 6, 65586, 327680, 6, 65585, 327680, 6, 65584, 327680, 6, 65583, 327680, 6, 65582, 327680, 6, 65581, 327680, 6, 65580, 327680, 6, 54, 327680, 6, 53, 327680, 6, 52, 327680, 6, 51, 327680, 6, 50, 327680, 6, 49, 327680, 6, 48, 327680, 6, 47, 327680, 6, 46, 327680, 6, 45, 327680, 6, 44, 327680, 6, 43, 327680, 6, 42, 327680, 6, 41, 327680, 6, 40, 327680, 6, 39, 327680, 6, 38, 327680, 6, 37, 327680, 6, 36, 327680, 6, 35, 327680, 6, 34, 327680, 6, 33, 327680, 6, 32, 327680, 6, 31, 327680, 6, 30, 327680, 6, 29, 327680, 6, 28, 327680, 6, 27, 327680, 6, 26, 327680, 6, 25, 327680, 6, 24, 327680, 6, 23, 327680, 6)
 
 [node name="TextureRect" type="TextureRect" parent="."]
-texture_filter = 2
-offset_left = -742.0
-offset_top = -519.0
-offset_right = 1590.0
-offset_bottom = 768.0
-texture = ExtResource("2_vx886")
-
-[node name="PanelContainer" type="PanelContainer" parent="TextureRect"]
-layout_mode = 0
-offset_left = 1053.0
-offset_top = 1024.0
-offset_right = 1126.0
-offset_bottom = 1054.0
-theme_override_styles/panel = SubResource("StyleBoxTexture_gdffe")
-
-[node name="Label" type="Label" parent="TextureRect/PanelContainer"]
-texture_filter = 2
-layout_mode = 2
-text = "press c ->"
+texture_filter = 1
+offset_left = -536.0
+offset_top = -505.0
+offset_right = 833.0
+texture = ExtResource("2_xbhug")
+stretch_mode = 1
 
 [node name="door" type="Sprite2D" parent="."]
 texture_filter = 1
