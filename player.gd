@@ -22,8 +22,9 @@ var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")
 func _physics_process(delta):
 	
 	# Add the gravity.
-	if not is_on_floor():
+	if not is_on_floor() :
 		velocity.y += gravity * delta
+		
 
  
 
@@ -32,6 +33,10 @@ func _physics_process(delta):
 	
 	if Input.is_action_just_pressed("jump") and is_on_floor():
 		velocity.y = jump_velocity
+		
+			
+			
+		
 	if is_on_wall() and Input.is_action_just_pressed("right"):
 		velocity.y = jump_velocity
 		velocity.x =wall_jump_pushback
@@ -112,3 +117,9 @@ func _unhandled_input(_event: InputEvent) -> void:
 		if actionables.size() >0:
 			actionables[0].action()
 			return
+			
+			
+		
+			
+			
+
