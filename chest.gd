@@ -15,13 +15,10 @@ func _ready():
 
 
 func _on_key_chest_opened():
+	get_tree().change_scene_to_file("res://gameplay1.tscn")
 	$closed.visible = false
 	$opened.visible = true	
-	if revealed:
-			self.hide()
-	else:
-			self.show()
-			revealed = not revealed
+	
 		
 	
 	

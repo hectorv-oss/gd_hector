@@ -1,6 +1,7 @@
-[gd_scene load_steps=13 format=3 uid="uid://ba3pkxbrefjpd"]
+[gd_scene load_steps=14 format=3 uid="uid://ba3pkxbrefjpd"]
 
 [ext_resource type="Texture2D" uid="uid://cl5vd2m5jjybk" path="res://HUD Text Box.png" id="1_mlkgo"]
+[ext_resource type="Script" path="res://gameplay1.gd" id="1_tkchl"]
 [ext_resource type="Texture2D" uid="uid://crs3fmw256n73" path="res://chest noir.png" id="2_dyk73"]
 [ext_resource type="FontFile" uid="uid://cbjflvhx0o87j" path="res://PixeloidSans-Bold.ttf" id="3_j1a77"]
 [ext_resource type="Texture2D" uid="uid://gvs0ak8c053o" path="res://chest blue.png" id="4_k15so"]
@@ -32,6 +33,7 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 columns = 3
+script = ExtResource("1_tkchl")
 
 [node name="Button" type="PanelContainer" parent="."]
 layout_mode = 2
@@ -201,3 +203,4 @@ texture = ExtResource("2_dyk73")
 [connection signal="pressed" from="Button6" to="UserInterface" method="_on_button_6_pressed"]
 [connection signal="pressed" from="Button10" to="UserInterface" method="_on_button_10_pressed"]
 [connection signal="pressed" from="Button11" to="UserInterface" method="_on_button_11_pressed"]
+[connection signal="pressed" from="Button12" to="." method="_on_button_12_pressed"]

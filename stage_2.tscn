@@ -16,12 +16,12 @@
 [ext_resource type="Texture2D" uid="uid://bmk1oalu5idv6" path="res://chest open.png" id="14_klaid"]
 [ext_resource type="PackedScene" uid="uid://co4sgs1xslqdv" path="res://key.tscn" id="15_k7ouk"]
 [ext_resource type="Script" path="res://particle.gd" id="17_eymy7"]
-[ext_resource type="Texture2D" uid="uid://dc8g5tkwbjhnx" path="res://food 1.png" id="18_mnmdr"]
+[ext_resource type="Texture2D" uid="uid://dc8g5tkwbjhnx" path="res://food/food 1.png" id="18_mnmdr"]
 [ext_resource type="Script" path="res://door 2.gd" id="19_44df6"]
 [ext_resource type="PackedScene" uid="uid://b02dh7pmfqy3v" path="res://user_interface.tscn" id="19_clri5"]
-[ext_resource type="Texture2D" uid="uid://c5lphwslo4ikx" path="res://food 3.png" id="21_8e4v2"]
-[ext_resource type="Texture2D" uid="uid://cyxnlqp02kdwj" path="res://food 2.png" id="22_4fsvb"]
-[ext_resource type="Texture2D" uid="uid://bg730repfskxh" path="res://food4.png" id="23_x8ehw"]
+[ext_resource type="Texture2D" uid="uid://c5lphwslo4ikx" path="res://food/food 3.png" id="21_8e4v2"]
+[ext_resource type="Texture2D" uid="uid://cyxnlqp02kdwj" path="res://food/food 2.png" id="22_4fsvb"]
+[ext_resource type="Texture2D" uid="uid://bg730repfskxh" path="res://food/food4.png" id="23_x8ehw"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_xt3tb"]
 texture = ExtResource("2_lwwox")
@@ -2348,28 +2348,12 @@ size = Vector2(58.5, 76)
 
 [node name="stage 2" type="Node"]
 
-[node name="TextureRect2" type="TextureRect" parent="."]
-texture_filter = 2
-offset_left = -34.0
-offset_top = -495.0
-offset_right = 906.0
-offset_bottom = -187.0
-expand_mode = 5
-
 [node name="TextureRect" type="TextureRect" parent="."]
 texture_filter = 1
 offset_left = -40.0
-offset_top = -216.0
-offset_right = 368.0
+offset_top = -488.0
+offset_right = 906.0
 offset_bottom = 43.0
-texture = ExtResource("1_odcls")
-stretch_mode = 1
-
-[node name="TextureRect" type="TextureRect" parent="TextureRect"]
-layout_mode = 0
-offset_left = 404.0
-offset_right = 928.0
-offset_bottom = 259.0
 texture = ExtResource("1_odcls")
 
 [node name="TileMap" type="TileMap" parent="."]

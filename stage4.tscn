@@ -1,51 +1,51 @@
 [gd_scene load_steps=85 format=3 uid="uid://da71jyyx7njdi"]
 
-[ext_resource type="Texture2D" uid="uid://cc0ev0xj6ky1g" path="res://hotline mi/background maimi.png" id="1_2cvs2"]
-[ext_resource type="Texture2D" uid="uid://hqen14ntrmc5" path="res://sprStage.png" id="3_tpmwd"]
-[ext_resource type="Texture2D" uid="uid://casj5r5ojujtp" path="res://hotline mi/WallBrickH.png" id="3_x8kiw"]
-[ext_resource type="Texture2D" uid="uid://b5gd5rxxhswfh" path="res://sprArcadeCabinet2_strip2.png" id="4_45go7"]
+[ext_resource type="Texture2D" uid="uid://cc0ev0xj6ky1g" path="res://hotline miami tile/hotline +/background maimi.png" id="1_2cvs2"]
+[ext_resource type="Texture2D" uid="uid://hqen14ntrmc5" path="res://hotline miami tile/sprStage.png" id="3_tpmwd"]
+[ext_resource type="Texture2D" uid="uid://casj5r5ojujtp" path="res://hotline miami tile/hotline +/WallBrickH.png" id="3_x8kiw"]
+[ext_resource type="Texture2D" uid="uid://b5gd5rxxhswfh" path="res://hotline miami tile/sprArcadeCabinet2_strip2.png" id="4_45go7"]
 [ext_resource type="Texture2D" uid="uid://ptmkrxrenga8" path="res://door.png" id="4_v7uq2"]
-[ext_resource type="Texture2D" uid="uid://1kyxn4waihq1" path="res://sprDrawersV24_strip5.png" id="5_bf3h6"]
+[ext_resource type="Texture2D" uid="uid://1kyxn4waihq1" path="res://hotline miami tile/sprDrawersV24_strip5.png" id="5_bf3h6"]
 [ext_resource type="PackedScene" uid="uid://n6ne3fe1rimi" path="res://player.tscn" id="5_eg7ln"]
-[ext_resource type="Texture2D" uid="uid://d372l8qrjmvdl" path="res://sprDreamSitFinal_strip2.png" id="6_2m5d5"]
+[ext_resource type="Texture2D" uid="uid://d372l8qrjmvdl" path="res://hotline miami tile/sprDreamSitFinal_strip2.png" id="6_2m5d5"]
 [ext_resource type="PackedScene" uid="uid://m5xf63d6uc8x" path="res://nathan.tscn" id="6_2t47f"]
-[ext_resource type="Texture2D" uid="uid://h1l6siqm2jf8" path="res://hotline mi/wall intérieur.png" id="6_lmmo3"]
+[ext_resource type="Texture2D" uid="uid://h1l6siqm2jf8" path="res://hotline miami tile/hotline +/wall intérieur.png" id="6_lmmo3"]
 [ext_resource type="PackedScene" uid="uid://y8cffggl1yqy" path="res://actionable.tscn" id="7_dwne8"]
 [ext_resource type="Script" path="res://door4.gd" id="7_f53su"]
-[ext_resource type="Texture2D" uid="uid://cgcq5srv5me0b" path="res://sprGlassPanelH.png" id="7_kbhef"]
+[ext_resource type="Texture2D" uid="uid://cgcq5srv5me0b" path="res://hotline miami tile/sprGlassPanelH.png" id="7_kbhef"]
 [ext_resource type="Script" path="res://chest4.gd" id="8_1hyq6"]
 [ext_resource type="Resource" uid="uid://btjhnhvbfws00" path="res://dialogue/main.dialogue" id="8_5gh25"]
-[ext_resource type="Texture2D" uid="uid://dwtta5uy7cwvt" path="res://sprGlassPanelV.png" id="8_b0d5t"]
-[ext_resource type="Texture2D" uid="uid://d4g0dy3iylqv4" path="res://sprLamps_strip5.png" id="9_leip3"]
-[ext_resource type="Texture2D" uid="uid://ssgcivbryms5" path="res://sprPelletPlant_strip2.png" id="10_180ko"]
+[ext_resource type="Texture2D" uid="uid://dwtta5uy7cwvt" path="res://hotline miami tile/sprGlassPanelV.png" id="8_b0d5t"]
+[ext_resource type="Texture2D" uid="uid://d4g0dy3iylqv4" path="res://hotline miami tile/sprLamps_strip5.png" id="9_leip3"]
+[ext_resource type="Texture2D" uid="uid://ssgcivbryms5" path="res://hotline miami tile/sprPelletPlant_strip2.png" id="10_180ko"]
 [ext_resource type="Texture2D" uid="uid://cu5ncam0unbdr" path="res://chest.png" id="11_212sl"]
-[ext_resource type="Texture2D" uid="uid://cnoiaurgmgffv" path="res://sprPlant3.png" id="11_c8q70"]
-[ext_resource type="Texture2D" uid="uid://dm5mvo686kbve" path="res://sprShowerGlassV.png" id="12_64812"]
+[ext_resource type="Texture2D" uid="uid://cnoiaurgmgffv" path="res://hotline miami tile/sprPlant3.png" id="11_c8q70"]
+[ext_resource type="Texture2D" uid="uid://dm5mvo686kbve" path="res://hotline miami tile/sprShowerGlassV.png" id="12_64812"]
 [ext_resource type="Texture2D" uid="uid://bmk1oalu5idv6" path="res://chest open.png" id="12_lb13n"]
-[ext_resource type="Texture2D" uid="uid://cll58v5c7fmi7" path="res://sprSofaH48_strip2.png" id="13_bxa23"]
+[ext_resource type="Texture2D" uid="uid://cll58v5c7fmi7" path="res://hotline miami tile/sprSofaH48_strip2.png" id="13_bxa23"]
 [ext_resource type="PackedScene" uid="uid://co4sgs1xslqdv" path="res://key.tscn" id="13_yr2ir"]
-[ext_resource type="Texture2D" uid="uid://cpy5wy8sgoiuk" path="res://sprSofaH64_strip2.png" id="14_pkti1"]
+[ext_resource type="Texture2D" uid="uid://cpy5wy8sgoiuk" path="res://hotline miami tile/sprSofaH64_strip2.png" id="14_pkti1"]
 [ext_resource type="Script" path="res://particle.gd" id="14_t6h0w"]
-[ext_resource type="Texture2D" uid="uid://dc8g5tkwbjhnx" path="res://food 1.png" id="15_4t2e4"]
-[ext_resource type="Texture2D" uid="uid://c4kag8v7k1asv" path="res://sprArmchair.png" id="15_cw7w4"]
-[ext_resource type="Texture2D" uid="uid://cb3nct1fojmsr" path="res://sprBossCar1.png" id="16_0dl7m"]
-[ext_resource type="Texture2D" uid="uid://vwr0iluaxgxe" path="res://sprCyanPlant_strip2.png" id="16_7dmmi"]
-[ext_resource type="Texture2D" uid="uid://5hc6v55ixf2s" path="res://sprLeatherCouch.png" id="17_ntrx5"]
+[ext_resource type="Texture2D" uid="uid://dc8g5tkwbjhnx" path="res://food/food 1.png" id="15_4t2e4"]
+[ext_resource type="Texture2D" uid="uid://c4kag8v7k1asv" path="res://hotline miami tile/sprArmchair.png" id="15_cw7w4"]
+[ext_resource type="Texture2D" uid="uid://cb3nct1fojmsr" path="res://hotline miami tile/sprBossCar1.png" id="16_0dl7m"]
+[ext_resource type="Texture2D" uid="uid://vwr0iluaxgxe" path="res://hotline miami tile/sprCyanPlant_strip2.png" id="16_7dmmi"]
+[ext_resource type="Texture2D" uid="uid://5hc6v55ixf2s" path="res://hotline miami tile/sprLeatherCouch.png" id="17_ntrx5"]
 [ext_resource type="PackedScene" uid="uid://b02dh7pmfqy3v" path="res://user_interface.tscn" id="17_wofyt"]
-[ext_resource type="Texture2D" uid="uid://d11li60rr137q" path="res://sprMCGlassTable_strip4.png" id="18_p2ijs"]
-[ext_resource type="Texture2D" uid="uid://c5lphwslo4ikx" path="res://food 3.png" id="18_vxrlg"]
-[ext_resource type="Texture2D" uid="uid://cyxnlqp02kdwj" path="res://food 2.png" id="19_q2k6x"]
-[ext_resource type="Texture2D" uid="uid://cgcsf3gvadaf" path="res://hotline mi/wall intérieur2.png" id="20_1lexl"]
+[ext_resource type="Texture2D" uid="uid://d11li60rr137q" path="res://hotline miami tile/sprMCGlassTable_strip4.png" id="18_p2ijs"]
+[ext_resource type="Texture2D" uid="uid://c5lphwslo4ikx" path="res://food/food 3.png" id="18_vxrlg"]
+[ext_resource type="Texture2D" uid="uid://cyxnlqp02kdwj" path="res://food/food 2.png" id="19_q2k6x"]
+[ext_resource type="Texture2D" uid="uid://cgcsf3gvadaf" path="res://hotline miami tile/hotline +/wall intérieur2.png" id="20_1lexl"]
 [ext_resource type="Texture2D" uid="uid://bfjdx6ps25lok" path="res://door 2.png" id="20_bck7t"]
-[ext_resource type="Texture2D" uid="uid://bg730repfskxh" path="res://food4.png" id="20_oqis2"]
-[ext_resource type="Texture2D" uid="uid://cvv67eopnj17q" path="res://hotline mi/hot background0.png" id="20_tqn6b"]
+[ext_resource type="Texture2D" uid="uid://bg730repfskxh" path="res://food/food4.png" id="20_oqis2"]
+[ext_resource type="Texture2D" uid="uid://cvv67eopnj17q" path="res://hotline miami tile/hotline +/hot background0.png" id="20_tqn6b"]
 [ext_resource type="Script" path="res://chest8.gd" id="21_eowb7"]
-[ext_resource type="Texture2D" uid="uid://7d8d62wrucex" path="res://hotline mi/Corner.png" id="21_l1t5c"]
+[ext_resource type="Texture2D" uid="uid://7d8d62wrucex" path="res://hotline miami tile/hotline +/Corner.png" id="21_l1t5c"]
 [ext_resource type="Resource" uid="uid://b3cf483qewmg5" path="res://dialogue/tuto.dialogue" id="21_o6p1c"]
 [ext_resource type="Script" path="res://key3.gd" id="22_emf0q"]
-[ext_resource type="Texture2D" uid="uid://d4jqd7r0yj8ch" path="res://hotline mi/WallBrickV.png" id="24_vd1cu"]
-[ext_resource type="Texture2D" uid="uid://cvm55murpvoll" path="res://hotline mi/CornerBrick.png" id="25_fnbk0"]
-[ext_resource type="Texture2D" uid="uid://dj2d1rnqvm1e4" path="res://sprComputer_strip2.png" id="26_fvgv7"]
+[ext_resource type="Texture2D" uid="uid://d4jqd7r0yj8ch" path="res://hotline miami tile/hotline +/WallBrickV.png" id="24_vd1cu"]
+[ext_resource type="Texture2D" uid="uid://cvm55murpvoll" path="res://hotline miami tile/hotline +/CornerBrick.png" id="25_fnbk0"]
+[ext_resource type="Texture2D" uid="uid://dj2d1rnqvm1e4" path="res://hotline miami tile/sprComputer_strip2.png" id="26_fvgv7"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_xh7hd"]
 texture = ExtResource("20_tqn6b")
@@ -5179,12 +5179,13 @@ sources/21 = SubResource("TileSetAtlasSource_gygnq")
 sources/22 = SubResource("TileSetAtlasSource_phbv4")
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_h6ibi"]
+size = Vector2(25.3056, 23.6364)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_21nhn"]
 size = Vector2(58.5, 76)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ekci1"]
-size = Vector2(49.25, 43.5)
+size = Vector2(74.625, 71.75)
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_dr4r5"]
 radius = 37.0
@@ -5429,10 +5430,10 @@ sources/2 = SubResource("TileSetAtlasSource_wh0wv")
 
 [node name="TextureRect" type="TextureRect" parent="."]
 texture_filter = 2
-offset_left = -1452.0
-offset_top = -1247.0
-offset_right = 1349.0
-offset_bottom = 942.0
+offset_left = -1458.0
+offset_top = -1224.0
+offset_right = 1343.0
+offset_bottom = 965.0
 texture = ExtResource("1_2cvs2")
 
 [node name="floor" type="TileMap" parent="."]
@@ -5461,14 +5462,13 @@ scale = Vector2(2.51429, 1.48333)
 texture = ExtResource("4_v7uq2")
 
 [node name="panneau" parent="." instance=ExtResource("6_2t47f")]
-position = Vector2(-49, -30)
+position = Vector2(-83, 56)
 
 [node name="Actionable" parent="panneau" instance=ExtResource("7_dwne8")]
-position = Vector2(1.83374, -2.27273)
 dialogue_ressource = ExtResource("8_5gh25")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="panneau/Actionable"]
-position = Vector2(1.10024, 6.36363)
+position = Vector2(3.85085, 0.454546)
 shape = SubResource("RectangleShape2D_h6ibi")
 
 [node name="door exit" type="Area2D" parent="."]
@@ -5483,32 +5483,29 @@ shape = SubResource("RectangleShape2D_21nhn")
 position = Vector2(624, -90)
 
 [node name="food" type="Area2D" parent="."]
-position = Vector2(956, -18)
+position = Vector2(1133, -34)
 scale = Vector2(0.5, 0.5)
 script = ExtResource("14_t6h0w")
 
 [node name="Sprite2D" type="Sprite2D" parent="food"]
 texture_filter = 1
-position = Vector2(1.99995, 9.53674e-07)
 scale = Vector2(1.29101, 0.946289)
-texture = ExtResource("15_4t2e4")
+texture = ExtResource("20_oqis2")
 
 [node name="particleshape" type="CollisionShape2D" parent="food"]
-position = Vector2(2.75, -3.5)
 shape = SubResource("RectangleShape2D_ekci1")
 
 [node name="UserInterface" parent="." instance=ExtResource("17_wofyt")]
 
 [node name="food2" type="Area2D" parent="."]
-position = Vector2(-141, -44)
+position = Vector2(152, 69)
 scale = Vector2(0.5, 0.5)
 script = ExtResource("14_t6h0w")
 
 [node name="Sprite2D" type="Sprite2D" parent="food2"]
 texture_filter = 1
-position = Vector2(4, 3.8147e-06)
 scale = Vector2(1.91602, 1.32129)
-texture = ExtResource("18_vxrlg")
+texture = ExtResource("20_oqis2")
 
 [node name="particleshape" type="CollisionShape2D" parent="food2"]
 shape = SubResource("RectangleShape2D_ekci1")
@@ -5528,22 +5525,20 @@ texture = ExtResource("19_q2k6x")
 shape = SubResource("RectangleShape2D_ekci1")
 
 [node name="food4" type="Area2D" parent="."]
-position = Vector2(-87, -94)
+position = Vector2(475, 92)
 scale = Vector2(0.5, 0.5)
 script = ExtResource("14_t6h0w")
 
 [node name="Sprite2D" type="Sprite2D" parent="food4"]
 texture_filter = 1
-position = Vector2(3.8147e-06, 5.72205e-06)
 scale = Vector2(1.41602, 1.38379)
-texture = ExtResource("20_oqis2")
+texture = ExtResource("15_4t2e4")
 
 [node name="particleshape" type="CollisionShape2D" parent="food4"]
-position = Vector2(1.375, 2.25)
 shape = SubResource("RectangleShape2D_ekci1")
 
 [node name="food5" type="Area2D" parent="."]
-position = Vector2(98, -293)
+position = Vector2(19, -265)
 scale = Vector2(0.5, 0.5)
 script = ExtResource("14_t6h0w")
 
@@ -5556,20 +5551,20 @@ texture = ExtResource("20_oqis2")
 shape = SubResource("RectangleShape2D_ekci1")
 
 [node name="food6" type="Area2D" parent="."]
-position = Vector2(-69, -294)
+position = Vector2(-110, 40)
 scale = Vector2(0.5, 0.5)
 script = ExtResource("14_t6h0w")
 
 [node name="Sprite2D" type="Sprite2D" parent="food6"]
 texture_filter = 1
 scale = Vector2(1.41602, 1.38379)
-texture = ExtResource("20_oqis2")
+texture = ExtResource("19_q2k6x")
 
 [node name="particleshape" type="CollisionShape2D" parent="food6"]
 shape = SubResource("RectangleShape2D_ekci1")
 
 [node name="food7" type="Area2D" parent="."]
-position = Vector2(429, -392)
+position = Vector2(523, -240)
 scale = Vector2(0.5, 0.5)
 script = ExtResource("14_t6h0w")
 
@@ -5582,7 +5577,7 @@ texture = ExtResource("18_vxrlg")
 shape = SubResource("RectangleShape2D_ekci1")
 
 [node name="food8" type="Area2D" parent="."]
-position = Vector2(510, -393)
+position = Vector2(24, 474)
 scale = Vector2(0.5, 0.5)
 script = ExtResource("14_t6h0w")
 
@@ -5592,38 +5587,37 @@ scale = Vector2(1.41602, 1.38379)
 texture = ExtResource("15_4t2e4")
 
 [node name="particleshape" type="CollisionShape2D" parent="food8"]
+position = Vector2(-12.6875, -14.125)
 shape = SubResource("RectangleShape2D_ekci1")
 
 [node name="food9" type="Area2D" parent="."]
-position = Vector2(566, 78)
+position = Vector2(549, 165)
 scale = Vector2(0.5, 0.5)
 script = ExtResource("14_t6h0w")
 
 [node name="Sprite2D" type="Sprite2D" parent="food9"]
 texture_filter = 1
 scale = Vector2(1.41602, 1.38379)
-texture = ExtResource("20_oqis2")
+texture = ExtResource("19_q2k6x")
 
 [node name="particleshape" type="CollisionShape2D" parent="food9"]
 shape = SubResource("RectangleShape2D_ekci1")
 
 [node name="food10" type="Area2D" parent="."]
-position = Vector2(827, -135)
+position = Vector2(496, 384)
 scale = Vector2(0.5, 0.5)
 script = ExtResource("14_t6h0w")
 
 [node name="Sprite2D" type="Sprite2D" parent="food10"]
 texture_filter = 1
-position = Vector2(980, -66)
 scale = Vector2(1.41602, 1.38379)
 texture = ExtResource("19_q2k6x")
 
 [node name="particleshape" type="CollisionShape2D" parent="food10"]
-position = Vector2(978, -2)
 shape = SubResource("RectangleShape2D_ekci1")
 
 [node name="food11" type="Area2D" parent="."]
-position = Vector2(936, -228)
+position = Vector2(253, -110)
 scale = Vector2(0.5, 0.5)
 script = ExtResource("14_t6h0w")
 
@@ -5636,36 +5630,36 @@ texture = ExtResource("18_vxrlg")
 shape = SubResource("RectangleShape2D_ekci1")
 
 [node name="food12" type="Area2D" parent="."]
-position = Vector2(963, -526)
+position = Vector2(238, -271)
 scale = Vector2(0.5, 0.5)
 script = ExtResource("14_t6h0w")
 
 [node name="Sprite2D" type="Sprite2D" parent="food12"]
 texture_filter = 1
 scale = Vector2(1.41602, 1.38379)
-texture = ExtResource("20_oqis2")
+texture = ExtResource("15_4t2e4")
 
 [node name="particleshape" type="CollisionShape2D" parent="food12"]
 shape = SubResource("RectangleShape2D_ekci1")
 
 [node name="food13" type="Area2D" parent="."]
-position = Vector2(631, -424)
+position = Vector2(844, 13)
 scale = Vector2(0.5, 0.5)
 script = ExtResource("14_t6h0w")
 
 [node name="Sprite2D" type="Sprite2D" parent="food13"]
 texture_filter = 1
 scale = Vector2(1.41602, 1.38379)
-texture = ExtResource("15_4t2e4")
+texture = ExtResource("18_vxrlg")
 
 [node name="particleshape" type="CollisionShape2D" parent="food13"]
 shape = SubResource("RectangleShape2D_ekci1")
 
 [node name="panneau2" parent="." instance=ExtResource("6_2t47f")]
-position = Vector2(787, 129)
+position = Vector2(713, -321)
 
 [node name="Actionable" parent="panneau2" instance=ExtResource("7_dwne8")]
-position = Vector2(-9.90219, -6.81818)
+position = Vector2(-26.7726, 26.8182)
 dialogue_ressource = ExtResource("21_o6p1c")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="panneau2/Actionable"]
@@ -5679,31 +5673,31 @@ scale = Vector2(1.74286, 1.48333)
 texture = ExtResource("20_bck7t")
 
 [node name="chest" type="StaticBody2D" parent="."]
-position = Vector2(356, 375)
+position = Vector2(15, -344)
 script = ExtResource("8_1hyq6")
 
 [node name="chest_zone" type="Area2D" parent="chest"]
-position = Vector2(28, 270)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="chest/chest_zone"]
-position = Vector2(8, 84)
+position = Vector2(0, -7)
 shape = SubResource("CapsuleShape2D_dr4r5")
 
 [node name="closed" type="Sprite2D" parent="chest"]
 texture_filter = 1
-position = Vector2(41, 106)
+position = Vector2(0, -6)
 scale = Vector2(0.720517, 0.861518)
 texture = ExtResource("11_212sl")
 
 [node name="opened" type="Sprite2D" parent="chest"]
 visible = false
+position = Vector2(11, -5)
 texture = ExtResource("12_lb13n")
 
 [node name="Player" parent="." instance=ExtResource("5_eg7ln")]
 position = Vector2(-296, 50)
 
 [node name="chest2" type="StaticBody2D" parent="."]
-position = Vector2(1068, -36)
+position = Vector2(376, 240)
 script = ExtResource("21_eowb7")
 
 [node name="chest_zone" type="Area2D" parent="chest2"]

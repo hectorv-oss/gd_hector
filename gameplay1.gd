@@ -1,21 +1,10 @@
-extends Node2D
+extends GridContainer
 
-var revealed = false
+
 
 
 
 	
-
-
-
-
-
-
-
-func _on_button_6_pressed():
-	if Input.is_action_just_pressed("left_click"):
-		if revealed:
-			self.hide()
-		else:
-			self.show()
-		revealed = not revealed
+func _on_button_12_pressed():
+	print('button 12')
+	get_tree().change_scene_to_file("res://main.tscn")
