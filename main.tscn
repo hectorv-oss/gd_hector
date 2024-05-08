@@ -1,4 +1,4 @@
-[gd_scene load_steps=32 format=3 uid="uid://dph1wnxg0xjp2"]
+[gd_scene load_steps=31 format=3 uid="uid://dph1wnxg0xjp2"]
 
 [ext_resource type="Texture2D" uid="uid://dta3vkpwltc3w" path="res://cave.png" id="1_hlfs5"]
 [ext_resource type="PackedScene" uid="uid://n6ne3fe1rimi" path="res://player.tscn" id="2_rh0nb"]
@@ -21,8 +21,7 @@
 [ext_resource type="Texture2D" uid="uid://cyxnlqp02kdwj" path="res://food/food 2.png" id="19_lilyp"]
 [ext_resource type="Texture2D" uid="uid://bg730repfskxh" path="res://food/food4.png" id="20_bdsm1"]
 [ext_resource type="Resource" uid="uid://b3cf483qewmg5" path="res://dialogue/tuto.dialogue" id="21_24lv7"]
-[ext_resource type="AudioStream" uid="uid://dksbnxlwyhsur" path="res://soundtrack/Chrono Trigger OST Underground Sewer.mp3" id="22_amjtp"]
-[ext_resource type="PackedScene" uid="uid://ba3pkxbrefjpd" path="res://gameplay1.tscn" id="23_hamyf"]
+[ext_resource type="AudioStream" uid="uid://bqweio6alkspe" path="res://soundtrack/Chrono-Trigger-OST-Underground-S.mp3" id="22_ssrn3"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_gdffe"]
 texture = ExtResource("2_y8ovm")
@@ -873,15 +872,8 @@ shape = SubResource("RectangleShape2D_h6ibi")
 position = Vector2(268, -78)
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
-stream = ExtResource("22_amjtp")
+stream = ExtResource("22_ssrn3")
 autoplay = true
-
-[node name="Gameplay1b" parent="." instance=ExtResource("23_hamyf")]
-visible = false
-offset_left = 17.0
-offset_top = -222.0
-offset_right = 11.0
-offset_bottom = -233.0
 
 [connection signal="body_entered" from="door exit" to="door exit" method="_on_body_entered"]
 [connection signal="body_exited" from="door exit" to="door exit" method="_on_body_exited"]

@@ -22,8 +22,8 @@
 [ext_resource type="PackedScene" uid="uid://b02dh7pmfqy3v" path="res://user_interface.tscn" id="19_clri5"]
 [ext_resource type="Texture2D" uid="uid://c5lphwslo4ikx" path="res://food/food 3.png" id="21_8e4v2"]
 [ext_resource type="Texture2D" uid="uid://cyxnlqp02kdwj" path="res://food/food 2.png" id="22_4fsvb"]
-[ext_resource type="AudioStream" uid="uid://drpp5m6y0qw5x" path="res://soundtrack/Malki (online-audio-converter.com).mp3" id="23_fksse"]
 [ext_resource type="Texture2D" uid="uid://bg730repfskxh" path="res://food/food4.png" id="23_x8ehw"]
+[ext_resource type="AudioStream" uid="uid://6rnbt6ju660" path="res://soundtrack/Malki-online-audio-convertercom (1).mp3" id="24_wd3qg"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_xt3tb"]
 texture = ExtResource("2_lwwox")
@@ -2525,7 +2525,7 @@ texture = ExtResource("21_8e4v2")
 shape = SubResource("RectangleShape2D_x5ond")
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
-stream = ExtResource("23_fksse")
+stream = ExtResource("24_wd3qg")
 autoplay = true
 
 [connection signal="body_entered" from="chest/chest_zone" to="key" method="_on_chest_zone_body_entered"]

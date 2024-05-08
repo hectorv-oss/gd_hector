@@ -22,7 +22,7 @@
 [ext_resource type="Script" path="res://chest9.gd" id="21_3cwpi"]
 [ext_resource type="Script" path="res://key4.gd" id="22_bu5pi"]
 [ext_resource type="Script" path="res://chest11.gd" id="23_dxlns"]
-[ext_resource type="AudioStream" uid="uid://dnnvyvqj6dysb" path="res://soundtrack/Freezeflame Galaxy (Ice) -  Super Mario Galaxy.mp3" id="24_3t33b"]
+[ext_resource type="AudioStream" uid="uid://dl16wc6rbivte" path="res://soundtrack/Happy-Mambo-Kirbys-Return-to-Dre (1).mp3" id="24_ersvr"]
 [ext_resource type="Script" path="res://key6.gd" id="24_fprlx"]
 
 [sub_resource type="TileMapPattern" id="TileMapPattern_42w8l"]
@@ -1367,7 +1367,7 @@ position = Vector2(164, 44)
 script = ExtResource("24_fprlx")
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
-stream = ExtResource("24_3t33b")
+stream = ExtResource("24_ersvr")
 autoplay = true
 
 [connection signal="body_entered" from="door exit" to="door exit" method="_on_body_entered"]

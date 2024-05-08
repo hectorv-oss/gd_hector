@@ -45,7 +45,7 @@
 [ext_resource type="Texture2D" uid="uid://cvm55murpvoll" path="res://hotline miami tile/hotline +/CornerBrick.png" id="25_fnbk0"]
 [ext_resource type="Texture2D" uid="uid://dj2d1rnqvm1e4" path="res://hotline miami tile/hotline +/sprComputer_strip2.png" id="26_fvgv7"]
 [ext_resource type="Resource" uid="uid://1sf11y03pst1" path="res://stage4.dialogue" id="30_iqnjh"]
-[ext_resource type="AudioStream" uid="uid://dj3sttbxrb6qh" path="res://soundtrack/Miami Disco (online-audio-converter.com).mp3" id="47_oq7h7"]
+[ext_resource type="AudioStream" uid="uid://mx52um1460vn" path="res://soundtrack/Miami-Disco-online-audio-convert.mp3" id="46_4tgcv"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_xh7hd"]
 texture = ExtResource("20_tqn6b")
@@ -5714,7 +5714,7 @@ format = 2
 layer_0/tile_data = PackedInt32Array(3538971, 0, 536870912, 3538972, 65536, 536870912, 3538973, 131072, 536870912, 3473435, 0, 536870913, 3473436, 65536, 536870913, 3473437, 131072, 536870913, 3407899, 0, 536870914, 3407900, 65536, 536870914, 3407901, 131072, 536870914, 3342363, 0, 536870915, 3342364, 65536, 536870915, 3276828, 65536, 536870916, -3538940, 65537, 268435457, -3538941, 131073, 268435457, -3538942, 196609, 268435457, -3473404, 65537, 268435458, -3473405, 131073, 268435458, -3473406, 196609, 268435458, -3407868, 65537, 268435459, -3407869, 131073, 268435459, -3473416, 131074, 0, -3407880, 131074, 1, -3473415, 196610, 0, -3407879, 196610, 1, -3473414, 262146, 0, -3407878, 262146, 1)
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
-stream = ExtResource("47_oq7h7")
+stream = ExtResource("46_4tgcv")
 autoplay = true
 
 [connection signal="body_entered" from="door exit" to="door exit" method="_on_body_entered"]

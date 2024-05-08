@@ -18,8 +18,8 @@
 [ext_resource type="Texture2D" uid="uid://bg730repfskxh" path="res://food/food4.png" id="19_obha1"]
 [ext_resource type="Script" path="res://chest10.gd" id="20_6w05x"]
 [ext_resource type="Texture2D" uid="uid://bfjdx6ps25lok" path="res://door 2.png" id="20_l2x8p"]
+[ext_resource type="AudioStream" uid="uid://dl16wc6rbivte" path="res://soundtrack/Happy-Mambo-Kirbys-Return-to-Dre (1).mp3" id="21_6v3il"]
 [ext_resource type="Script" path="res://key5.gd" id="21_pasml"]
-[ext_resource type="AudioStream" uid="uid://rhnl3abgq4xs" path="res://soundtrack/Happy Mambo - Kirbys Return to Dream Land Soundtrack.mp3" id="21_vhkpl"]
 [ext_resource type="Script" path="res://chest12.gd" id="22_s52r4"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_e1qp2"]
@@ -53071,7 +53071,7 @@ position = Vector2(1071, 27)
 script = ExtResource("21_pasml")
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
-stream = ExtResource("21_vhkpl")
+stream = ExtResource("21_6v3il")
 autoplay = true
 
 [connection signal="body_entered" from="chest/chest_zone" to="key" method="_on_chest_zone_body_entered"]
