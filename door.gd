@@ -16,10 +16,8 @@ func _on_body_exited(body):
 
 func _physics_process (_delta):
 	if entered == true:
-		if keytaken == true:
-			if in_chest_zone == true:
-				if Input.is_action_just_pressed("enter"):
-					get_tree().change_scene_to_file("res://stage_2.tscn")
+		if Input.is_action_just_pressed("enter"):
+			get_tree().change_scene_to_file("res://stage_2.tscn")
 					
 			
 	

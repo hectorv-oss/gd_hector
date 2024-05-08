@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://dnnvyvqj6dysb"
+path="res://.godot/imported/Freezeflame Galaxy (Ice) -  Super Mario Galaxy.mp3-5e8fd8b24f73ce4e6863617baf05ac47.mp3str"
+
+[deps]
+
+source_file="res://soundtrack/Freezeflame Galaxy (Ice) -  Super Mario Galaxy.mp3"
+dest_files=["res://.godot/imported/Freezeflame Galaxy (Ice) -  Super Mario Galaxy.mp3-5e8fd8b24f73ce4e6863617baf05ac47.mp3str"]
+
+[params]
+
+loop=true
+loop_offset=1.0
+bpm=0.0
+beat_count=0
+bar_beats=4

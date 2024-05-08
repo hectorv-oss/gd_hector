@@ -4,7 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://hlloa5gppupd" path="res://jump/tout ensemble anime/jump.png" id="2_g2d5b"]
 [ext_resource type="Texture2D" uid="uid://dpd6wlk5dviyd" path="res://jump/tout ensemble anime/finale.png" id="3_elua4"]
 [ext_resource type="Texture2D" uid="uid://b1h40nr4y863" path="res://commande vrai.png" id="4_v1jtv"]
-[ext_resource type="Script" path="res://player sprite2d.gd" id="5_wv8s6"]
+[ext_resource type="Script" path="res://comamnde.gd" id="5_wv8s6"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_hew6j"]
 atlas = ExtResource("2_g2d5b")
@@ -145,8 +145,7 @@ shape = SubResource("CapsuleShape2D_8s87j")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 visible = false
-texture_filter = 2
-position = Vector2(1.76902, 1.09174)
+position = Vector2(1, 39)
 scale = Vector2(0.677386, 0.869235)
 texture = ExtResource("4_v1jtv")
 script = ExtResource("5_wv8s6")

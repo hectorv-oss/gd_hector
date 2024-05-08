@@ -47,8 +47,8 @@ theme_override_fonts/font = ExtResource("2_2p3as")
 theme_override_font_sizes/font_size = 20
 text = "
 
-il n'y  a pas de vrai coffre 
-parmi les coffres blues
+le coffre en dessous de moi
+est le vrai coffre
 
 "
 horizontal_alignment = 1
@@ -64,8 +64,8 @@ texture_filter = 2
 layout_mode = 2
 theme_override_fonts/font = ExtResource("2_2p3as")
 theme_override_font_sizes/font_size = 20
-text = "il  y a  le  vrai coffre 
-parmi les coffres noirs"
+text = "la colonne la plus à gauche
+contient le véritable coffre"
 horizontal_alignment = 1
 
 [node name="Button3" type="PanelContainer" parent="."]
@@ -79,8 +79,8 @@ texture_filter = 2
 layout_mode = 2
 theme_override_fonts/font = ExtResource("2_2p3as")
 theme_override_font_sizes/font_size = 18
-text = "il  y a  le  vrai coffre 
-parmi les coffres bleus"
+text = "la colonne la plus à gauche
+contient le véritable coffre"
 horizontal_alignment = 1
 
 [node name="Button4" type="Button" parent="."]
@@ -128,7 +128,7 @@ layout_mode = 2
 theme_override_fonts/font = ExtResource("2_2p3as")
 theme_override_font_sizes/font_size = 20
 text = "Le coffre au-dessus de moi
-n'est pas le vrai coffre
+est le vrai coffre
 "
 horizontal_alignment = 1
 
@@ -142,8 +142,8 @@ theme_override_styles/panel = SubResource("StyleBoxTexture_3vtyx")
 layout_mode = 2
 theme_override_fonts/font = ExtResource("2_2p3as")
 theme_override_font_sizes/font_size = 18
-text = "La ligne supérieure contient
- le véritable coffre
+text = "le coffre de droite 
+n'est pas le vrai coffre
 "
 horizontal_alignment = 1
 
@@ -159,7 +159,8 @@ layout_mode = 2
 theme_override_fonts/font = ExtResource("2_2p3as")
 theme_override_font_sizes/font_size = 20
 text = "Le coffre au-dessus de moi
-est  le vrai coffre"
+n'est pas le vrai coffre
+"
 horizontal_alignment = 1
 
 [node name="Button10" type="Button" parent="."]

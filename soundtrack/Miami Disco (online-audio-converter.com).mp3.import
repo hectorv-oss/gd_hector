@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://dj3sttbxrb6qh"
+path="res://.godot/imported/Miami Disco (online-audio-converter.com).mp3-a0a04dadb507d67c9fced44dd07d4b03.mp3str"
+
+[deps]
+
+source_file="res://soundtrack/Miami Disco (online-audio-converter.com).mp3"
+dest_files=["res://.godot/imported/Miami Disco (online-audio-converter.com).mp3-a0a04dadb507d67c9fced44dd07d4b03.mp3str"]
+
+[params]
+
+loop=true
+loop_offset=0.0
+bpm=0.0
+beat_count=0
+bar_beats=4

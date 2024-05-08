@@ -14,6 +14,7 @@ func _ready():
 
 
 func _on_button_3_pressed():
+	
 	mistakes = mistakes + 1
 	$mistake.text = "mistake :" + str(mistakes)
 
