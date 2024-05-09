@@ -1,4 +1,4 @@
-[gd_scene load_steps=38 format=3 uid="uid://xmxckagh7ape"]
+[gd_scene load_steps=41 format=3 uid="uid://xmxckagh7ape"]
 
 [ext_resource type="Texture2D" uid="uid://cwlqywtmc4my4" path="res://map frost mountain/frost/frost3.png" id="2_38ifu"]
 [ext_resource type="Texture2D" uid="uid://ptmkrxrenga8" path="res://door.png" id="3_25upn"]
@@ -22,8 +22,11 @@
 [ext_resource type="Script" path="res://chest9.gd" id="21_3cwpi"]
 [ext_resource type="Script" path="res://key4.gd" id="22_bu5pi"]
 [ext_resource type="Script" path="res://chest11.gd" id="23_dxlns"]
-[ext_resource type="AudioStream" uid="uid://dl16wc6rbivte" path="res://soundtrack/Happy-Mambo-Kirbys-Return-to-Dre (1).mp3" id="24_ersvr"]
 [ext_resource type="Script" path="res://key6.gd" id="24_fprlx"]
+[ext_resource type="AudioStream" uid="uid://dnnvyvqj6dysb" path="res://soundtrack/Freezeflame Galaxy (Ice) -  Super Mario Galaxy.mp3" id="24_rco7s"]
+[ext_resource type="PackedScene" uid="uid://cq47goaqri8yx" path="res://gameplay11.tscn" id="25_2brq0"]
+[ext_resource type="PackedScene" uid="uid://da2qh0ia40g8w" path="res://gameplay5.tscn" id="26_wc6or"]
+[ext_resource type="PackedScene" uid="uid://bdanw3niwydsg" path="res://gameplay9.tscn" id="27_6dt3m"]
 
 [sub_resource type="TileMapPattern" id="TileMapPattern_42w8l"]
 tile_data = PackedInt32Array(0, 65537, 0)
@@ -1064,22 +1067,22 @@ pattern_3 = SubResource("TileMapPattern_f27dy")
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_h6ibi"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_21nhn"]
-size = Vector2(58.5, 76)
-
-[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_dr4r5"]
-radius = 37.0
-height = 78.0
+size = Vector2(81, 79)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ekci1"]
 size = Vector2(49.25, 43.5)
 
-[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_1vmh4"]
-radius = 37.0
-height = 78.0
-
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_el6th"]
-radius = 37.0
-height = 78.0
+radius = 14.0
+height = 60.0
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_dr4r5"]
+radius = 11.0
+height = 36.0
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_1vmh4"]
+radius = 13.0
+height = 72.0
 
 [node name="main" type="Node" groups=["Persist"]]
 
@@ -1091,12 +1094,12 @@ layer_0/tile_data = PackedInt32Array(65527, 65536, 0, 65528, 65536, 0, 65529, 65
 
 [node name="door" type="Sprite2D" parent="."]
 texture_filter = 1
-position = Vector2(1237, -47.5)
+position = Vector2(1237, -44)
 scale = Vector2(2.51429, 1.48333)
 texture = ExtResource("3_25upn")
 
 [node name="Player" parent="." instance=ExtResource("4_8be2v")]
-position = Vector2(-426, -38)
+position = Vector2(-435, -30)
 
 [node name="panneau" parent="." instance=ExtResource("5_13om1")]
 position = Vector2(-74, -24)
@@ -1114,30 +1117,11 @@ position = Vector2(1256, -36)
 script = ExtResource("7_t8lgy")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="door exit"]
-position = Vector2(-8, -7)
+position = Vector2(-12.5, -5.5)
 shape = SubResource("RectangleShape2D_21nhn")
 
-[node name="chest" type="StaticBody2D" parent="."]
-position = Vector2(423, 114)
-script = ExtResource("8_dybc8")
-
-[node name="chest_zone" type="Area2D" parent="chest"]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="chest/chest_zone"]
-shape = SubResource("CapsuleShape2D_dr4r5")
-
-[node name="closed" type="Sprite2D" parent="chest"]
-texture_filter = 1
-position = Vector2(4, -8)
-scale = Vector2(0.720517, 0.861518)
-texture = ExtResource("10_7tdps")
-
-[node name="opened" type="Sprite2D" parent="chest"]
-visible = false
-texture = ExtResource("11_nospt")
-
 [node name="key" parent="." instance=ExtResource("12_axiwv")]
-position = Vector2(140, 177)
+position = Vector2(187, 241)
 
 [node name="food" type="Area2D" parent="."]
 position = Vector2(1126, -126)
@@ -1318,27 +1302,9 @@ shape = SubResource("RectangleShape2D_ekci1")
 
 [node name="door2" type="Sprite2D" parent="."]
 texture_filter = 1
-position = Vector2(-479, -53)
+position = Vector2(-481, -61)
 scale = Vector2(1.74286, 1.48333)
 texture = ExtResource("20_y3kvp")
-
-[node name="chest2" type="StaticBody2D" parent="."]
-position = Vector2(1107, 168)
-script = ExtResource("21_3cwpi")
-
-[node name="chest_zone" type="Area2D" parent="chest2"]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="chest2/chest_zone"]
-shape = SubResource("CapsuleShape2D_1vmh4")
-
-[node name="closed" type="Sprite2D" parent="chest2"]
-texture_filter = 1
-scale = Vector2(0.720517, 0.861518)
-texture = ExtResource("10_7tdps")
-
-[node name="opened" type="Sprite2D" parent="chest2"]
-visible = false
-texture = ExtResource("11_nospt")
 
 [node name="key2" parent="." instance=ExtResource("12_axiwv")]
 position = Vector2(995, 256)
@@ -1351,29 +1317,97 @@ script = ExtResource("23_dxlns")
 [node name="chest_zone" type="Area2D" parent="chest3"]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="chest3/chest_zone"]
+position = Vector2(-2, 10)
 shape = SubResource("CapsuleShape2D_el6th")
 
 [node name="closed" type="Sprite2D" parent="chest3"]
 texture_filter = 1
+position = Vector2(0, -1)
 scale = Vector2(0.720517, 0.861518)
 texture = ExtResource("10_7tdps")
 
 [node name="opened" type="Sprite2D" parent="chest3"]
 visible = false
+texture_filter = 1
+position = Vector2(12, 2)
 texture = ExtResource("11_nospt")
 
 [node name="key3" parent="." instance=ExtResource("12_axiwv")]
 position = Vector2(164, 44)
 script = ExtResource("24_fprlx")
 
+[node name="chest" type="StaticBody2D" parent="."]
+position = Vector2(423, 114)
+script = ExtResource("8_dybc8")
+
+[node name="chest_zone" type="Area2D" parent="chest"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="chest/chest_zone"]
+position = Vector2(1, 4)
+shape = SubResource("CapsuleShape2D_dr4r5")
+
+[node name="closed" type="Sprite2D" parent="chest"]
+texture_filter = 1
+position = Vector2(4, -8)
+scale = Vector2(0.720517, 0.861518)
+texture = ExtResource("10_7tdps")
+
+[node name="opened" type="Sprite2D" parent="chest"]
+visible = false
+texture_filter = 1
+position = Vector2(15, -7)
+texture = ExtResource("11_nospt")
+
+[node name="chest2" type="StaticBody2D" parent="chest"]
+position = Vector2(684, 54)
+script = ExtResource("21_3cwpi")
+
+[node name="chest_zone" type="Area2D" parent="chest/chest2"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="chest/chest2/chest_zone"]
+position = Vector2(-2, 14)
+shape = SubResource("CapsuleShape2D_1vmh4")
+
+[node name="closed" type="Sprite2D" parent="chest/chest2"]
+texture_filter = 1
+position = Vector2(0, 2)
+scale = Vector2(0.720517, 0.861518)
+texture = ExtResource("10_7tdps")
+
+[node name="opened" type="Sprite2D" parent="chest/chest2"]
+visible = false
+texture_filter = 1
+position = Vector2(11, 3)
+texture = ExtResource("11_nospt")
+
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
-stream = ExtResource("24_ersvr")
+process_mode = 3
+stream = ExtResource("24_rco7s")
 autoplay = true
+
+[node name="Gameplay11b" parent="." instance=ExtResource("25_2brq0")]
+visible = false
+offset_left = -486.0
+offset_top = -292.0
+offset_right = -732.0
+offset_bottom = -429.0
+
+[node name="Gameplay5b" parent="." instance=ExtResource("26_wc6or")]
+visible = false
+offset_left = -176.0
+offset_top = -51.0
+offset_right = -488.0
+offset_bottom = -215.0
+
+[node name="Gameplay9b" parent="." instance=ExtResource("27_6dt3m")]
+visible = false
+offset_left = 383.0
+offset_top = -42.0
+offset_right = 240.0
+offset_bottom = -228.0
 
 [connection signal="body_entered" from="door exit" to="door exit" method="_on_body_entered"]
 [connection signal="body_exited" from="door exit" to="door exit" method="_on_body_exited"]
-[connection signal="body_entered" from="chest/chest_zone" to="key" method="_on_chest_zone_body_entered"]
-[connection signal="body_exited" from="chest/chest_zone" to="key" method="_on_chest_zone_body_exited"]
 [connection signal="chest_opened" from="key" to="chest" method="_on_key_chest_opened"]
 [connection signal="body_entered" from="food" to="UserInterface" method="_on_particle_body_entered"]
 [connection signal="body_entered" from="food2" to="UserInterface" method="_on_particle_body_entered"]
@@ -1388,9 +1422,11 @@ autoplay = true
 [connection signal="body_entered" from="food11" to="UserInterface" method="_on_particle_body_entered"]
 [connection signal="body_entered" from="food12" to="UserInterface" method="_on_particle_body_entered"]
 [connection signal="body_entered" from="food13" to="UserInterface" method="_on_particle_body_entered"]
-[connection signal="body_entered" from="chest2/chest_zone" to="key2" method="_on_chest_zone_body_entered"]
-[connection signal="body_exited" from="chest2/chest_zone" to="key2" method="_on_chest_zone_body_exited"]
-[connection signal="chest_opened" from="key2" to="chest2" method="_on_key_2_chest_opened"]
+[connection signal="chest_opened" from="key2" to="chest/chest2" method="_on_key_2_chest_opened"]
 [connection signal="body_entered" from="chest3/chest_zone" to="key3" method="_on_chest_zone_body_entered"]
 [connection signal="body_exited" from="chest3/chest_zone" to="key3" method="_on_chest_zone_body_exited"]
 [connection signal="chest_opened" from="key3" to="chest3" method="_on_key_3_chest_opened"]
+[connection signal="body_entered" from="chest/chest_zone" to="key" method="_on_chest_zone_body_entered"]
+[connection signal="body_exited" from="chest/chest_zone" to="key" method="_on_chest_zone_body_exited"]
+[connection signal="body_entered" from="chest/chest2/chest_zone" to="key2" method="_on_chest_zone_body_entered"]
+[connection signal="body_exited" from="chest/chest2/chest_zone" to="key2" method="_on_chest_zone_body_exited"]

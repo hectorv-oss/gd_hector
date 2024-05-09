@@ -1,4 +1,4 @@
-[gd_scene load_steps=31 format=3 uid="uid://dph1wnxg0xjp2"]
+[gd_scene load_steps=34 format=3 uid="uid://dph1wnxg0xjp2"]
 
 [ext_resource type="Texture2D" uid="uid://dta3vkpwltc3w" path="res://cave.png" id="1_hlfs5"]
 [ext_resource type="PackedScene" uid="uid://n6ne3fe1rimi" path="res://player.tscn" id="2_rh0nb"]
@@ -22,6 +22,9 @@
 [ext_resource type="Texture2D" uid="uid://bg730repfskxh" path="res://food/food4.png" id="20_bdsm1"]
 [ext_resource type="Resource" uid="uid://b3cf483qewmg5" path="res://dialogue/tuto.dialogue" id="21_24lv7"]
 [ext_resource type="AudioStream" uid="uid://bqweio6alkspe" path="res://soundtrack/Chrono-Trigger-OST-Underground-S.mp3" id="22_ssrn3"]
+[ext_resource type="Texture2D" uid="uid://b1h40nr4y863" path="res://commande vrai.png" id="23_8y1dk"]
+[ext_resource type="Script" path="res://comamnde.gd" id="24_uxk4y"]
+[ext_resource type="PackedScene" uid="uid://ba3pkxbrefjpd" path="res://gameplay1.tscn" id="25_nefek"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_gdffe"]
 texture = ExtResource("2_y8ovm")
@@ -563,8 +566,7 @@ pattern_0 = SubResource("TileMapPattern_0cp70")
 size = Vector2(76.25, 80)
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_dr4r5"]
-radius = 37.0
-height = 78.0
+height = 36.0
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ekci1"]
 size = Vector2(49.25, 43.5)
@@ -572,18 +574,22 @@ size = Vector2(49.25, 43.5)
 [node name="Main" type="Node" groups=["Persist"]]
 
 [node name="TextureRect" type="TextureRect" parent="."]
-offset_left = -1220.0
-offset_top = -1070.0
-offset_right = 1785.0
-offset_bottom = 636.0
+anchors_preset = -1
+anchor_right = 0.126
+anchor_bottom = 0.241
+offset_left = -1251.0
+offset_top = -1118.0
+offset_right = 2579.2
+offset_bottom = 824.832
 texture = ExtResource("1_hlfs5")
 
 [node name="PanelContainer" type="PanelContainer" parent="TextureRect"]
+texture_filter = 1
 layout_mode = 0
-offset_left = 1053.0
-offset_top = 1024.0
-offset_right = 1126.0
-offset_bottom = 1054.0
+offset_left = 1095.0
+offset_top = 1076.0
+offset_right = 1168.0
+offset_bottom = 1111.0
 theme_override_styles/panel = SubResource("StyleBoxTexture_gdffe")
 
 [node name="Label" type="Label" parent="TextureRect/PanelContainer"]
@@ -869,11 +875,27 @@ position = Vector2(13.5697, 11.3636)
 shape = SubResource("RectangleShape2D_h6ibi")
 
 [node name="Player" parent="." instance=ExtResource("2_rh0nb")]
-position = Vector2(268, -78)
+position = Vector2(-239, -16)
+
+[node name="Sprite2D" type="Sprite2D" parent="Player"]
+visible = false
+texture_filter = 1
+position = Vector2(42, 21)
+scale = Vector2(1.87253, 2.25996)
+texture = ExtResource("23_8y1dk")
+script = ExtResource("24_uxk4y")
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+process_mode = 3
 stream = ExtResource("22_ssrn3")
 autoplay = true
+
+[node name="Gameplay1b" parent="." instance=ExtResource("25_nefek")]
+visible = false
+offset_left = -186.0
+offset_top = -205.0
+offset_right = -283.0
+offset_bottom = -357.0
 
 [connection signal="body_entered" from="door exit" to="door exit" method="_on_body_entered"]
 [connection signal="body_exited" from="door exit" to="door exit" method="_on_body_exited"]

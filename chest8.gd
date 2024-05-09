@@ -9,8 +9,11 @@ func _ready():
 
 
 
-func _on_key_chest_opened():
-	get_tree().change_scene_to_file("res://gameplay4.tscn")
+
+
+func _on_key_2_chest_opened():
+	get_tree().paused = true
+	$"../Gameplay4b".visible =true
+	$"../UserInterface".visible =false
 	$closed.visible = false
 	$opened.visible = true
-

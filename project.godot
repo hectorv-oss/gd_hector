@@ -10,8 +10,8 @@ config_version=5
 
 [application]
 
-config/name="exam"
-run/main_scene="res://main.tscn"
+config/name="L'Odyssée Farniente: Oasis de la sérénité"
+run/main_scene="res://menu.tscn"
 config/features=PackedStringArray("4.2", "GL Compatibility")
 config/icon="res://menu image icon jeu/icon.png"
 
@@ -22,6 +22,7 @@ DialogueManager="*res://addons/dialogue_manager/dialogue_manager.gd"
 
 [display]
 
+window/size/viewport_width=1300
 window/size/always_on_top=true
 window/stretch/mode="canvas_items"
 

@@ -26,3 +26,7 @@ func _on_chest_zone_body_exited(body):
 	in_chest_zone = false
 	print(in_chest_zone)
 
+
+
+func _on_chest_opened():
+	pass # Replace with function body.

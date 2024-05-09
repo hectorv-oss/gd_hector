@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=3 uid="uid://ba3pkxbrefjpd"]
+[gd_scene load_steps=13 format=3 uid="uid://ba3pkxbrefjpd"]
 
 [ext_resource type="Texture2D" uid="uid://cl5vd2m5jjybk" path="res://HUD Text Box.png" id="1_mlkgo"]
 [ext_resource type="Script" path="res://gameplay1.gd" id="1_tkchl"]
@@ -6,7 +6,6 @@
 [ext_resource type="FontFile" uid="uid://cbjflvhx0o87j" path="res://PixeloidSans-Bold.ttf" id="3_j1a77"]
 [ext_resource type="Texture2D" uid="uid://gvs0ak8c053o" path="res://chest blue.png" id="4_k15so"]
 [ext_resource type="Texture2D" uid="uid://ddivvvvek8h1u" path="res://chest red.png" id="5_ouquf"]
-[ext_resource type="PackedScene" uid="uid://b02dh7pmfqy3v" path="res://user_interface.tscn" id="7_ueb3q"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_dxagb"]
 texture = ExtResource("1_mlkgo")
@@ -31,35 +30,39 @@ process_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
+offset_right = -8.0
+offset_bottom = -1.0
 grow_horizontal = 2
 grow_vertical = 2
 columns = 3
 script = ExtResource("1_tkchl")
 
 [node name="Button" type="PanelContainer" parent="."]
+process_mode = 3
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 theme_override_styles/panel = SubResource("StyleBoxTexture_dxagb")
 
 [node name="text1" type="Label" parent="Button"]
+process_mode = 3
 texture_filter = 2
 layout_mode = 2
 theme_override_fonts/font = ExtResource("3_j1a77")
 theme_override_font_sizes/font_size = 20
-text = "
-
-la rangée inférieure
+text = "la rangée inférieure
  contient  le véritable coffre"
 horizontal_alignment = 1
 
 [node name="Button2" type="PanelContainer" parent="."]
+process_mode = 3
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 theme_override_styles/panel = SubResource("StyleBoxTexture_hrggx")
 
 [node name="text1" type="Label" parent="Button2"]
+process_mode = 3
 texture_filter = 2
 layout_mode = 2
 theme_override_fonts/font = ExtResource("3_j1a77")
@@ -69,12 +72,14 @@ text = "la rangée inférieure
 horizontal_alignment = 1
 
 [node name="Button3" type="PanelContainer" parent="."]
+process_mode = 3
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 theme_override_styles/panel = SubResource("StyleBoxTexture_4d3xn")
 
 [node name="text1" type="Label" parent="Button3"]
+process_mode = 3
 texture_filter = 2
 layout_mode = 2
 theme_override_fonts/font = ExtResource("3_j1a77")
@@ -90,9 +95,10 @@ size_flags_horizontal = 3
 size_flags_vertical = 3
 
 [node name="Sprite2D" type="Sprite2D" parent="Button4"]
+process_mode = 3
 texture_filter = 1
-position = Vector2(227, 42)
-scale = Vector2(6.78, 4.61667)
+position = Vector2(256, 23)
+scale = Vector2(6.315, 3.69583)
 texture = ExtResource("4_k15so")
 
 [node name="Button5" type="Button" parent="."]
@@ -102,9 +108,10 @@ size_flags_horizontal = 3
 size_flags_vertical = 3
 
 [node name="Sprite2D" type="Sprite2D" parent="Button5"]
+process_mode = 3
 texture_filter = 1
-position = Vector2(227, 42)
-scale = Vector2(6.78, 4.61667)
+position = Vector2(203, 55)
+scale = Vector2(5.675, 2.77917)
 texture = ExtResource("4_k15so")
 
 [node name="Button6" type="Button" parent="."]
@@ -114,18 +121,21 @@ size_flags_horizontal = 3
 size_flags_vertical = 3
 
 [node name="Sprite2D" type="Sprite2D" parent="Button6"]
+process_mode = 3
 texture_filter = 1
-position = Vector2(227, 42)
-scale = Vector2(6.78, 4.61667)
+position = Vector2(167, 27)
+scale = Vector2(5.795, 3.37917)
 texture = ExtResource("4_k15so")
 
 [node name="Button7" type="PanelContainer" parent="."]
+process_mode = 3
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 theme_override_styles/panel = SubResource("StyleBoxTexture_fs3hh")
 
 [node name="text1" type="Label" parent="Button7"]
+process_mode = 3
 texture_filter = 2
 layout_mode = 2
 theme_override_fonts/font = ExtResource("3_j1a77")
@@ -135,12 +145,14 @@ text = "la rangée inférieure
 horizontal_alignment = 1
 
 [node name="Button8" type="PanelContainer" parent="."]
+process_mode = 3
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 theme_override_styles/panel = SubResource("StyleBoxTexture_3vtyx")
 
 [node name="text1" type="Label" parent="Button8"]
+process_mode = 3
 texture_filter = 2
 layout_mode = 2
 theme_override_fonts/font = ExtResource("3_j1a77")
@@ -150,12 +162,14 @@ ne contient pas le vrai coffre"
 horizontal_alignment = 1
 
 [node name="Button9" type="PanelContainer" parent="."]
+process_mode = 3
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 theme_override_styles/panel = SubResource("StyleBoxTexture_0551e")
 
 [node name="text1" type="Label" parent="Button9"]
+process_mode = 3
 texture_filter = 2
 layout_mode = 2
 theme_override_fonts/font = ExtResource("3_j1a77")
@@ -172,9 +186,10 @@ size_flags_vertical = 3
 theme_override_font_sizes/font_size = 24
 
 [node name="Sprite2D" type="Sprite2D" parent="Button10"]
+process_mode = 3
 texture_filter = 1
-position = Vector2(227, 42)
-scale = Vector2(6.78, 4.61667)
+position = Vector2(235, 38)
+scale = Vector2(5.335, 3.0125)
 texture = ExtResource("5_ouquf")
 
 [node name="Button11" type="Button" parent="."]
@@ -185,9 +200,10 @@ size_flags_vertical = 3
 theme_override_font_sizes/font_size = 24
 
 [node name="Sprite2D" type="Sprite2D" parent="Button11"]
+process_mode = 3
 texture_filter = 1
-position = Vector2(227, 42)
-scale = Vector2(6.78, 4.61667)
+position = Vector2(216, 5)
+scale = Vector2(5.495, 4.04583)
 texture = ExtResource("2_dyk73")
 
 [node name="Button12" type="Button" parent="."]
@@ -198,16 +214,10 @@ size_flags_vertical = 3
 theme_override_font_sizes/font_size = 24
 
 [node name="Sprite2D" type="Sprite2D" parent="Button12"]
+process_mode = 3
 texture_filter = 1
-position = Vector2(227, 42)
-scale = Vector2(6.78, 4.61667)
+position = Vector2(225, 15)
+scale = Vector2(6.135, 3.73333)
 texture = ExtResource("2_dyk73")
 
-[node name="UserInterface" parent="." instance=ExtResource("7_ueb3q")]
-
-[connection signal="pressed" from="Button4" to="UserInterface" method="_on_button_4_pressed"]
-[connection signal="pressed" from="Button5" to="UserInterface" method="_on_button_5_pressed"]
-[connection signal="pressed" from="Button6" to="UserInterface" method="_on_button_6_pressed"]
-[connection signal="pressed" from="Button10" to="UserInterface" method="_on_button_10_pressed"]
-[connection signal="pressed" from="Button11" to="UserInterface" method="_on_button_11_pressed"]
 [connection signal="pressed" from="Button12" to="." method="_on_button_12_pressed"]

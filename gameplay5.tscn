@@ -1,12 +1,11 @@
-[gd_scene load_steps=14 format=3 uid="uid://da2qh0ia40g8w"]
+[gd_scene load_steps=13 format=3 uid="uid://da2qh0ia40g8w"]
 
+[ext_resource type="Script" path="res://gameplay5.gd" id="1_5ad6j"]
 [ext_resource type="Texture2D" uid="uid://cl5vd2m5jjybk" path="res://HUD Text Box.png" id="1_c00im"]
 [ext_resource type="FontFile" uid="uid://cbjflvhx0o87j" path="res://PixeloidSans-Bold.ttf" id="2_o82vi"]
 [ext_resource type="Texture2D" uid="uid://crs3fmw256n73" path="res://chest noir.png" id="2_reo7w"]
 [ext_resource type="Texture2D" uid="uid://gvs0ak8c053o" path="res://chest blue.png" id="6_3aa1x"]
 [ext_resource type="Texture2D" uid="uid://ddivvvvek8h1u" path="res://chest red.png" id="7_em0t8"]
-[ext_resource type="PackedScene" uid="uid://b02dh7pmfqy3v" path="res://user_interface.tscn" id="8_ha45e"]
-[ext_resource type="Script" path="res://user_interface4.gd" id="9_evrw0"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_dxagb"]
 texture = ExtResource("1_c00im")
@@ -26,13 +25,14 @@ texture = ExtResource("1_c00im")
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_0551e"]
 texture = ExtResource("1_c00im")
 
-[node name="Gameplay1b" type="GridContainer"]
+[node name="Gameplay5b" type="GridContainer"]
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 columns = 3
+script = ExtResource("1_5ad6j")
 
 [node name="Button" type="PanelContainer" parent="."]
 layout_mode = 2
@@ -89,8 +89,8 @@ size_flags_vertical = 3
 
 [node name="Sprite2D" type="Sprite2D" parent="Button4"]
 texture_filter = 1
-position = Vector2(227, 42)
-scale = Vector2(6.78, 4.61667)
+position = Vector2(227, 15)
+scale = Vector2(5.19, 3.525)
 texture = ExtResource("7_em0t8")
 
 [node name="Button5" type="Button" parent="."]
@@ -100,8 +100,8 @@ size_flags_vertical = 3
 
 [node name="Sprite2D" type="Sprite2D" parent="Button5"]
 texture_filter = 1
-position = Vector2(227, 42)
-scale = Vector2(6.78, 4.61667)
+position = Vector2(225, 19)
+scale = Vector2(5.13, 3.10834)
 texture = ExtResource("2_reo7w")
 
 [node name="Button6" type="Button" parent="."]
@@ -111,8 +111,8 @@ size_flags_vertical = 3
 
 [node name="Sprite2D" type="Sprite2D" parent="Button6"]
 texture_filter = 1
-position = Vector2(227, 42)
-scale = Vector2(6.78, 4.61667)
+position = Vector2(220, 28)
+scale = Vector2(5.25, 3.10834)
 texture = ExtResource("2_reo7w")
 
 [node name="Button7" type="PanelContainer" parent="."]
@@ -168,11 +168,12 @@ theme_override_font_sizes/font_size = 24
 
 [node name="Sprite2D" type="Sprite2D" parent="Button10"]
 texture_filter = 1
-position = Vector2(227, 42)
-scale = Vector2(6.78, 4.61667)
+position = Vector2(214, 24)
+scale = Vector2(5.71, 3.44167)
 texture = ExtResource("6_3aa1x")
 
 [node name="Button11" type="Button" parent="."]
+process_mode = 3
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
@@ -180,8 +181,8 @@ theme_override_font_sizes/font_size = 24
 
 [node name="Sprite2D" type="Sprite2D" parent="Button11"]
 texture_filter = 1
-position = Vector2(227, 42)
-scale = Vector2(6.78, 4.61667)
+position = Vector2(217, 21)
+scale = Vector2(5.71, 3.525)
 texture = ExtResource("2_reo7w")
 
 [node name="Button12" type="Button" parent="."]
@@ -192,15 +193,8 @@ theme_override_font_sizes/font_size = 24
 
 [node name="Sprite2D" type="Sprite2D" parent="Button12"]
 texture_filter = 1
-position = Vector2(227, 42)
-scale = Vector2(6.78, 4.61667)
+position = Vector2(225, 22)
+scale = Vector2(5.13, 3.39167)
 texture = ExtResource("7_em0t8")
 
-[node name="UserInterface" parent="." instance=ExtResource("8_ha45e")]
-script = ExtResource("9_evrw0")
-
-[connection signal="pressed" from="Button4" to="UserInterface" method="_on_button_4_pressed"]
-[connection signal="pressed" from="Button5" to="UserInterface" method="_on_button_5_pressed"]
-[connection signal="pressed" from="Button6" to="UserInterface" method="_on_button_6_pressed"]
-[connection signal="pressed" from="Button10" to="UserInterface" method="_on_button_10_pressed"]
-[connection signal="pressed" from="Button12" to="UserInterface" method="_on_button_12_pressed"]
+[connection signal="pressed" from="Button11" to="." method="_on_button_11_pressed"]

@@ -1,11 +1,10 @@
-[gd_scene load_steps=13 format=3 uid="uid://21s6ri7llts6"]
+[gd_scene load_steps=12 format=3 uid="uid://21s6ri7llts6"]
 
+[ext_resource type="Script" path="res://gameplay7.gd" id="1_gs1iy"]
 [ext_resource type="Texture2D" uid="uid://cl5vd2m5jjybk" path="res://HUD Text Box.png" id="1_qodcr"]
 [ext_resource type="FontFile" uid="uid://cbjflvhx0o87j" path="res://PixeloidSans-Bold.ttf" id="2_dalag"]
 [ext_resource type="Texture2D" uid="uid://gvs0ak8c053o" path="res://chest blue.png" id="6_6jd4u"]
-[ext_resource type="Script" path="res://user_interface7.gd" id="6_vqxfw"]
 [ext_resource type="Texture2D" uid="uid://ddivvvvek8h1u" path="res://chest red.png" id="7_al461"]
-[ext_resource type="PackedScene" uid="uid://b02dh7pmfqy3v" path="res://user_interface.tscn" id="8_n83yo"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_dxagb"]
 texture = ExtResource("1_qodcr")
@@ -25,13 +24,14 @@ texture = ExtResource("1_qodcr")
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_0551e"]
 texture = ExtResource("1_qodcr")
 
-[node name="Gameplay1b" type="GridContainer"]
+[node name="Gameplay7b" type="GridContainer"]
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 columns = 3
+script = ExtResource("1_gs1iy")
 
 [node name="Button" type="PanelContainer" parent="."]
 layout_mode = 2
@@ -88,8 +88,8 @@ size_flags_vertical = 3
 
 [node name="Sprite2D" type="Sprite2D" parent="Button4"]
 texture_filter = 1
-position = Vector2(227, 42)
-scale = Vector2(6.78, 4.61667)
+position = Vector2(225, 42)
+scale = Vector2(5.11, 3.29167)
 texture = ExtResource("6_6jd4u")
 
 [node name="Button5" type="Button" parent="."]
@@ -99,8 +99,8 @@ size_flags_vertical = 3
 
 [node name="Sprite2D" type="Sprite2D" parent="Button5"]
 texture_filter = 1
-position = Vector2(227, 42)
-scale = Vector2(6.78, 4.61667)
+position = Vector2(217, 28)
+scale = Vector2(5.43, 3.625)
 texture = ExtResource("6_6jd4u")
 
 [node name="Button6" type="Button" parent="."]
@@ -110,8 +110,8 @@ size_flags_vertical = 3
 
 [node name="Sprite2D" type="Sprite2D" parent="Button6"]
 texture_filter = 1
-position = Vector2(227, 42)
-scale = Vector2(6.78, 4.61667)
+position = Vector2(205, 22)
+scale = Vector2(5.11, 3.69167)
 texture = ExtResource("6_6jd4u")
 
 [node name="Button7" type="PanelContainer" parent="."]
@@ -167,11 +167,12 @@ theme_override_font_sizes/font_size = 24
 
 [node name="Sprite2D" type="Sprite2D" parent="Button10"]
 texture_filter = 1
-position = Vector2(227, 42)
-scale = Vector2(6.78, 4.61667)
+position = Vector2(233, 2)
+scale = Vector2(5.59, 3.825)
 texture = ExtResource("7_al461")
 
 [node name="Button11" type="Button" parent="."]
+process_mode = 3
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
@@ -179,8 +180,8 @@ theme_override_font_sizes/font_size = 24
 
 [node name="Sprite2D" type="Sprite2D" parent="Button11"]
 texture_filter = 1
-position = Vector2(227, 42)
-scale = Vector2(6.78, 4.61667)
+position = Vector2(235, -2)
+scale = Vector2(5.67, 4.09167)
 texture = ExtResource("6_6jd4u")
 
 [node name="Button12" type="Button" parent="."]
@@ -191,15 +192,8 @@ theme_override_font_sizes/font_size = 24
 
 [node name="Sprite2D" type="Sprite2D" parent="Button12"]
 texture_filter = 1
-position = Vector2(227, 42)
-scale = Vector2(6.78, 4.61667)
+position = Vector2(199, 14)
+scale = Vector2(5.51, 3.425)
 texture = ExtResource("6_6jd4u")
 
-[node name="UserInterface" parent="." instance=ExtResource("8_n83yo")]
-script = ExtResource("6_vqxfw")
-
-[connection signal="pressed" from="Button4" to="UserInterface" method="_on_button_4_pressed"]
-[connection signal="pressed" from="Button5" to="UserInterface" method="_on_button_5_pressed"]
-[connection signal="pressed" from="Button6" to="UserInterface" method="_on_button_6_pressed"]
-[connection signal="pressed" from="Button10" to="UserInterface" method="_on_button_10_pressed"]
-[connection signal="pressed" from="Button12" to="UserInterface" method="_on_button_12_pressed"]
+[connection signal="pressed" from="Button11" to="." method="_on_button_11_pressed"]

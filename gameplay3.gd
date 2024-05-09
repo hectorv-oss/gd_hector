@@ -1,5 +1,10 @@
-extends Node2D
+extends GridContainer
 
 
-func _on_button_pressed():
-	get_tree().change_scene_to_file("res://stage3.tscn")
+
+
+
+func _on_button_8_pressed():
+	$"../Gameplay3b".visible = false
+	get_tree().paused = false
+	$"../UserInterface".visible = true

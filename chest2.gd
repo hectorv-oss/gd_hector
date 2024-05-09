@@ -14,6 +14,8 @@ func _ready():
 
 
 func _on_key_chest_opened():
-		get_tree().change_scene_to_file("res://gameplay2.tscn")
+		get_tree().paused = true
+		$"../Gameplay2b".visible = true
+		$"../UserInterface".visible =false
 		$closed.visible = false
 		$opened.visible = true

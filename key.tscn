@@ -5,7 +5,7 @@
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_mpvfp"]
 radius = 23.0
-height = 164.0
+height = 92.0
 
 [node name="key" type="StaticBody2D"]
 script = ExtResource("1_sho3f")
